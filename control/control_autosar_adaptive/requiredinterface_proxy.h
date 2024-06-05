@@ -11,7 +11,16 @@
 #define REQUIREDINTERFACE_PROXY_H_
 #include <memory>
 #include <utility>
-#include "requiredinterface_common.h"
+#include "ara/com/proxy_event.h"
+#include "ara/com/service_handle_type.h"
+#include "ara/com/service_handle_container.h"
+#include "ara/com/find_service_handle.h"
+#include "ara/com/service_factory.h"
+#include "ara/com/instance_identifier.h"
+#include "ara/com/instance_identifier_container.h"
+#include "ara/com/resolve_instance.h"
+#include "ara/core/instance_specifier.h"
+// #include "requiredinterface_common.h"
 
 namespace proxy
 {
@@ -41,12 +50,10 @@ namespace proxy
 
       mEventId = 5608;
       mEventGroupId = 63603;
-      Aeb.Init(ara::com::EventFactory::CreateProxyEvent<double, proxy_io::
-               RequiredInterface_Aeb_t>(handle, mEventId, mEventGroupId));
+      Aeb.Init(mEventId, mEventGroupId);
       mEventId = 63083;
       mEventGroupId = 63603;
-      Lkas.Init(ara::com::EventFactory::CreateProxyEvent<double, proxy_io::
-                RequiredInterface_Lkas_t>(handle, mEventId, mEventGroupId));
+      Lkas.Init(mEventId, mEventGroupId);
     }
 
     virtual ~RequiredInterfaceProxy()

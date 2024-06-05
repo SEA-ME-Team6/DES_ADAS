@@ -105,6 +105,7 @@ void control::RequiredPortLkasReceive(ara::com::SamplePtr< proxy::events::Lkas::
 {
   // Receive: '<Root>/Event Receive'
   control_B.EventReceive = *elementPtr;
+  std::cout << "lkas send: " << control_B.EventReceive << std::endl;
 }
 
 void control::RequiredPortAebReceive(ara::com::SamplePtr< proxy::events::Aeb::
@@ -112,6 +113,8 @@ void control::RequiredPortAebReceive(ara::com::SamplePtr< proxy::events::Aeb::
 {
   // Receive: '<Root>/Event Receive1'
   control_B.EventReceive1 = *elementPtr;
+  std::cout << "aeb send: " << control_B.EventReceive1 << std::endl;
+
 }
 
 // Model step function
@@ -241,7 +244,7 @@ void control::initialize()
   // Initialize service requester instance - RequiredPort
   proxy::RequiredInterfaceProxy::StartFindService(std::move(std::bind(&control::
     RequiredPortSvcHandler, this, std::placeholders::_1, std::placeholders::_2)),
-    ara::com::InstanceIdentifier(ara::core::StringView("1")));
+    ara::com::InstanceIdentifier(std::string("1")));
 }
 
 // Model terminate function
