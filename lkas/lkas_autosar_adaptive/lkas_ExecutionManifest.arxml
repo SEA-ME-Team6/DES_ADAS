@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model lkas
+Model version                : 1.3
+Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
+XML source code generated on : Wed Jun 05 13:41:51 2024
+Model Checksum               : 1240301461 3939160243 2477690280 776746313
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>ModeDeclarationGroups</SHORT-NAME>
+            <ELEMENTS>
+                <MODE-DECLARATION-GROUP>
+                    <SHORT-NAME>ProcessStateMachine</SHORT-NAME>
+                    <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeDeclarationGroups/ProcessStateMachine/Idle</INITIAL-MODE-REF>
+                    <MODE-DECLARATIONS>
+                        <MODE-DECLARATION UUID="abfeaf85-828e-55f3-f6ec-9e260a9b0fb3">
+                            <SHORT-NAME>Idle</SHORT-NAME>
+                            <VALUE>1</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="4134180e-a863-5c1a-3ad1-52303c697db5">
+                            <SHORT-NAME>Starting</SHORT-NAME>
+                            <VALUE>2</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="a9295a82-937c-56a5-734d-afc38e3139f8">
+                            <SHORT-NAME>Running</SHORT-NAME>
+                            <VALUE>3</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="6b167420-a26f-5afe-c927-58c98a140ab5">
+                            <SHORT-NAME>Terminating</SHORT-NAME>
+                            <VALUE>4</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="d13da6e8-ca8e-59b2-c41f-075e45ec5524">
+                            <SHORT-NAME>Terminated</SHORT-NAME>
+                            <VALUE>5</VALUE>
+                        </MODE-DECLARATION>
+                    </MODE-DECLARATIONS>
+                </MODE-DECLARATION-GROUP>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>lkas_Executable</SHORT-NAME>
+            <ELEMENTS>
+                <EXECUTABLE UUID="93068592-751b-58ed-e777-24e04a724009">
+                    <SHORT-NAME>lkas</SHORT-NAME>
+                    <BUILD-TYPE>BUILD-TYPE-DEBUG</BUILD-TYPE>
+                    <ROOT-SW-COMPONENT-PROTOTYPE UUID="f25dde81-46ca-5d16-99db-280a95ba00e2">
+                        <SHORT-NAME>lkas_RootSwComponentPrototype</SHORT-NAME>
+                        <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/Components/lkas</APPLICATION-TYPE-TREF>
+                    </ROOT-SW-COMPONENT-PROTOTYPE>
+                </EXECUTABLE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>lkas_FunctionGroupSet</SHORT-NAME>
+            <ELEMENTS>
+                <FUNCTION-GROUP-SET UUID="3597950c-29c9-58eb-7a84-200674a7d248">
+                    <SHORT-NAME>DefaultFunctionGroupSet</SHORT-NAME>
+                    <FUNCTION-GROUPS>
+                        <MODE-DECLARATION-GROUP-PROTOTYPE UUID="d85b88d8-8971-5db1-c8f4-caf7a29d9434">
+                            <SHORT-NAME>MachineFG</SHORT-NAME>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/MachineStates/MachineFG</TYPE-TREF>
+                        </MODE-DECLARATION-GROUP-PROTOTYPE>
+                    </FUNCTION-GROUPS>
+                </FUNCTION-GROUP-SET>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>lkas_ProcessDesigns</SHORT-NAME>
+            <ELEMENTS>
+                <PROCESS-DESIGN UUID="32e020ba-9119-598b-929e-947f043921d6">
+                    <SHORT-NAME>DefaultProcessDesign</SHORT-NAME>
+                    <EXECUTABLE-REFS>
+                        <EXECUTABLE-REF DEST="EXECUTABLE">/lkas_Executable/lkas</EXECUTABLE-REF>
+                    </EXECUTABLE-REFS>
+                </PROCESS-DESIGN>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>lkas_ProcessToMachineMappingSet</SHORT-NAME>
+            <ELEMENTS>
+                <PROCESS-TO-MACHINE-MAPPING-SET UUID="7777f695-daa1-5d17-519a-53041d26ca46">
+                    <SHORT-NAME>ProcessToMachineMappingSet</SHORT-NAME>
+                    <PROCESS-TO-MACHINE-MAPPINGS>
+                        <PROCESS-TO-MACHINE-MAPPING UUID="d5c8f515-a707-5a08-f856-d6e3b59e2930">
+                            <SHORT-NAME>DefaultMapping</SHORT-NAME>
+                            <MACHINE-REF DEST="MACHINE">/Machines/Host</MACHINE-REF>
+                            <PROCESS-REF DEST="PROCESS">/lkas_Processes/DefaultInstance</PROCESS-REF>
+                        </PROCESS-TO-MACHINE-MAPPING>
+                    </PROCESS-TO-MACHINE-MAPPINGS>
+                </PROCESS-TO-MACHINE-MAPPING-SET>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>lkas_Processes</SHORT-NAME>
+            <ELEMENTS>
+                <PROCESS UUID="0c722efd-67fe-528b-b146-bf9d4a3c9942">
+                    <SHORT-NAME>DefaultInstance</SHORT-NAME>
+                    <DESIGN-REF DEST="PROCESS-DESIGN">/lkas_ProcessDesigns/DefaultProcessDesign</DESIGN-REF>
+                    <EXECUTABLE-REFS>
+                        <EXECUTABLE-REF DEST="EXECUTABLE">/lkas_Executable/lkas</EXECUTABLE-REF>
+                    </EXECUTABLE-REFS>
+                    <PROCESS-STATE-MACHINE UUID="3bd418ca-6199-5506-e752-a22e98dafac8">
+                        <SHORT-NAME>ProcessStateMachine_ModeDeclarationGroupElement</SHORT-NAME>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeDeclarationGroups/ProcessStateMachine</TYPE-TREF>
+                    </PROCESS-STATE-MACHINE>
+                    <STATE-DEPENDENT-STARTUP-CONFIGS>
+                        <STATE-DEPENDENT-STARTUP-CONFIG>
+                            <FUNCTION-GROUP-STATE-IREFS>
+                                <FUNCTION-GROUP-STATE-IREF>
+                                    <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/lkas_FunctionGroupSet/DefaultFunctionGroupSet/MachineFG</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                    <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MachineStates/MachineFG/Running</TARGET-MODE-DECLARATION-REF>
+                                </FUNCTION-GROUP-STATE-IREF>
+                            </FUNCTION-GROUP-STATE-IREFS>
+                            <RESOURCE-GROUP-REF DEST="RESOURCE-GROUP">/Machines/Host/HostOsInstantiation/DefaultResourceGroup</RESOURCE-GROUP-REF>
+                            <STARTUP-CONFIG-REF DEST="STARTUP-CONFIG">/lkas_StartupConfigs/StartupConfigRR</STARTUP-CONFIG-REF>
+                        </STATE-DEPENDENT-STARTUP-CONFIG>
+                    </STATE-DEPENDENT-STARTUP-CONFIGS>
+                </PROCESS>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>lkas_StartupConfigs</SHORT-NAME>
+            <ELEMENTS>
+                <STARTUP-CONFIG UUID="24598a67-f499-5cea-862f-89d60a041975">
+                    <SHORT-NAME>StartupConfigRR</SHORT-NAME>
+                    <PROCESS-ARGUMENTS>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-s</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ServiceInstanceManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-e</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ExecutionManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                    </PROCESS-ARGUMENTS>
+                    <SCHEDULING-POLICY>SCHEDULING-POLICY-ROUND-ROBIN</SCHEDULING-POLICY>
+                    <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="656a0d0a-63b1-53b8-70db-3cfc525ee0f3">
+                    <SHORT-NAME>StartupConfigFifo</SHORT-NAME>
+                    <PROCESS-ARGUMENTS>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-s</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ServiceInstanceManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-e</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ExecutionManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                    </PROCESS-ARGUMENTS>
+                    <SCHEDULING-POLICY>SCHEDULING-POLICY-FIFO</SCHEDULING-POLICY>
+                    <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="1a96cbe3-918e-51a5-28d0-5df2b9fecfee">
+                    <SHORT-NAME>StartupConfigOther</SHORT-NAME>
+                    <PROCESS-ARGUMENTS>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-s</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ServiceInstanceManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-e</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ExecutionManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                    </PROCESS-ARGUMENTS>
+                    <SCHEDULING-POLICY>SCHEDULING-POLICY-OTHER</SCHEDULING-POLICY>
+                    <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
+                </STARTUP-CONFIG>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
