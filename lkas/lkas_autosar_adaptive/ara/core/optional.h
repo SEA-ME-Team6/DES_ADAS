@@ -17,6 +17,15 @@ namespace ara
         private:
             T *mValuePtr;
 
+            void Reset() noexcept
+            {
+                if (mValuePtr)
+                {
+                    delete mValuePtr;
+                    mValuePtr = nullptr;
+                }
+            }
+
         public:
             constexpr Optional() noexcept : mValuePtr{nullptr}
             {
@@ -39,16 +48,9 @@ namespace ara
 
             Optional(Optional &&other) noexcept(
                 std::is_nothrow_move_assignable<T>::value)
+                : mValuePtr(other.mValuePtr)
             {
-                if (other.HasValue())
-                {
-                    mValuePtr = other.mValuePtr;
-                    other.mValuePtr = nullptr;
-                }
-                else
-                {
-                    mValuePtr = nullptr;
-                }
+                other.mValuePtr = nullptr;
             }
 
             ~Optional()
@@ -56,57 +58,28 @@ namespace ara
                 Reset();
             }
 
-            constexpr Optional &operator=(const Optional &other)
-            {
-                Reset();
-
-                if (other.HasValue())
-                {
-                    mValuePtr = new T{*other.mValuePtr};
-                }
-
-                return *this;
-            }
-
-            constexpr Optional &operator=(Optional &&other) noexcept(
+            Optional &operator=(Optional other) noexcept(
                 std::is_nothrow_move_assignable<T>::value)
             {
-                Reset();
-
-                if (other.HasValue())
-                {
-                    mValuePtr = other.mValuePtr;
-                    other.mValuePtr = nullptr;
-                }
-
+                Swap(other);
                 return *this;
             }
 
             template <typename U = T>
-            constexpr Optional &operator=(const U &value)
+            Optional &operator=(U &&value)
             {
-                Reset();
-                mValuePtr = new T{static_cast<const T &>(value)};
-
+                Optional tmp{std::forward<U>(value)};
+                Swap(tmp);
                 return *this;
             }
 
-            template <typename U = T>
-            constexpr Optional &operator=(U &&value)
-            {
-                Reset();
-                mValuePtr = new T{static_cast<T &&>(value)};
-
-                return *this;
-            }
-
-            /// @brief Construct a new value from the give argument(s) and assign it to the instance value
+            /// @brief Construct a new value from the given argument(s) and assign it to the instance value
             /// @param args Argument(s) to construct a new value
             template <typename... Args>
-            void Emplace(Args &&...args)
+            void Emplace(Args&&... args)
             {
                 Reset();
-                mValuePtr = new T{args...};
+                mValuePtr = new T{std::forward<Args>(args)...};
             }
 
             /// @brief Swap the current instance with another one
@@ -114,30 +87,7 @@ namespace ara
             void Swap(Optional &other) noexcept(
                 std::is_nothrow_move_assignable<T>::value)
             {
-                if (HasValue() && other.HasValue())
-                {
-                    std::swap(mValuePtr, other.mValuePtr);
-                }
-                else if (HasValue() && !other.HasValue())
-                {
-                    other.mValuePtr = mValuePtr;
-                    mValuePtr = nullptr;
-                }
-                else if (!HasValue() && other.HasValue())
-                {
-                    mValuePtr = other.mValuePtr;
-                    other.mValuePtr = nullptr;
-                }
-            }
-
-            /// @brief Reset the instance value
-            void Reset() noexcept
-            {
-                if (HasValue())
-                {
-                    delete mValuePtr;
-                    mValuePtr = nullptr;
-                }
+                std::swap(mValuePtr, other.mValuePtr);
             }
 
             /// @brief Indicate whether the instance has a value or not
@@ -187,7 +137,7 @@ namespace ara
             {
                 if (HasValue())
                 {
-                    mValuePtr;
+                    return mValuePtr;
                 }
                 else
                 {
@@ -217,10 +167,7 @@ namespace ara
             {
                 if (HasValue())
                 {
-                    T *_result{mValuePtr};
-                    mValuePtr = nullptr;
-
-                    return std::move(*_result);
+                    return std::move(*mValuePtr);
                 }
                 else
                 {
@@ -241,7 +188,7 @@ namespace ara
                 }
                 else
                 {
-                    return static_cast<T>(defaultValue);
+                    return static_cast<T>(std::forward<U>(defaultValue));
                 }
             }
 
@@ -258,7 +205,7 @@ namespace ara
                 }
                 else
                 {
-                    return static_cast<T>(defaultValue);
+                    return static_cast<T>(std::forward<U>(defaultValue));
                 }
             }
         };
@@ -267,44 +214,21 @@ namespace ara
         template <typename T>
         inline bool operator==(const Optional<T> &lhs, const Optional<T> &rhs) noexcept
         {
-            bool _result;
-
             if (lhs.HasValue() && rhs.HasValue())
             {
-                _result = lhs.Value() == rhs.Value();
-            }
-            else if (!lhs.HasValue() && !rhs.HasValue())
-            {
-                _result = true;
+                return lhs.Value() == rhs.Value();
             }
             else
             {
-                _result = false;
+                return !lhs.HasValue() && !rhs.HasValue();
             }
-
-            return _result;
         }
 
         /// @returns False if both optional instances contain a value and their values are equal or both do not contain a value, otherwise true
         template <typename T>
         inline bool operator!=(const Optional<T> &lhs, const Optional<T> &rhs) noexcept
         {
-            bool _result;
-
-            if (lhs.HasValue() && rhs.HasValue())
-            {
-                _result = lhs.Value() != rhs.Value();
-            }
-            else if (!lhs.HasValue() && !rhs.HasValue())
-            {
-                _result = false;
-            }
-            else
-            {
-                _result = true;
-            }
-
-            return _result;
+            return !(lhs == rhs);
         }
     }
 }

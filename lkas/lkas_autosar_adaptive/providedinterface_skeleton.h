@@ -10,7 +10,13 @@
 #ifndef PROVIDEDINTERFACE_SKELETON_H_
 #define PROVIDEDINTERFACE_SKELETON_H_
 #include <memory>
-#include "providedinterface_common.h"
+#include "ara/com/skeleton_event.h"
+#include "ara/com/method_call_proccessing_mode.h"
+#include "ara/com/instance_identifier.h"
+#include "ara/com/instance_identifier_container.h"
+#include "ara/com/resolve_instance.h"
+#include "ara/com/service_handle_type.h"
+// #include "providedinterface_common.h"
 
 namespace skeleton
 {
@@ -60,28 +66,26 @@ namespace skeleton
       default;
     inline ara::core::Result<void> OfferService()
     {
-      ara::com::ServiceFactory::CreateService(mHndl);
+      // ara::com::ServiceFactory::CreateService(mHndl);
       uint16_t mEventId, mEventGroupId;
       uint16_t mMethodId;
       mEventId = 65364;
       mEventGroupId = 65364;
-      Distance_error.Init(ara::com::EventFactory::CreateSkeletonEvent<double,
-                          skeleton_io::ProvidedInterface_Distance_error_t>(mHndl,
-        mEventId, mEventGroupId));
+      Distance_error.Init(mHndl,mEventId, mEventGroupId);
       return ara::core::Result<void>::FromValue();
     }
 
     inline void StopOfferService()
     {
       Distance_error.Deinit();
-      ara::com::ServiceFactory::DestroyService(mHndl);
+      // ara::com::ServiceFactory::DestroyService(mHndl);
     }
 
     skeleton::events::Distance_error Distance_error;
    private:
     ara::com::ServiceHandleType mHndl;
     ara::com::MethodCallProcessingMode mMethodProcMode;
-    std::shared_ptr<ara::com::SkeletonMethodMiddlewareBase> mMethodMiddleware;
+    // std::shared_ptr<ara::com::SkeletonMethodMiddlewareBase> mMethodMiddleware;
   };
 }                                      /* namespace skeleton */
 
