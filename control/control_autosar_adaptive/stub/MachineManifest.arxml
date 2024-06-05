@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model control
-Model version                : 1.1
+Model version                : 1.2
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 20:33:04 2024
+XML source code generated on : Wed Jun 05 20:40:58 2024
 Model Checksum               : 970843107 1975005797 1204804016 920561102
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
@@ -82,7 +82,7 @@ Model Checksum               : 970843107 1975005797 1204804016 920561102
         <AR-PACKAGE>
             <SHORT-NAME>control_DltApplicationToProcessMapping</SHORT-NAME>
             <ELEMENTS>
-                <DLT-APPLICATION-TO-PROCESS-MAPPING UUID="b25df17f-bfef-553e-06b1-967ae6e4b094">
+                <DLT-APPLICATION-TO-PROCESS-MAPPING UUID="d2b6d76d-b16e-54fa-3ad3-05b1e867b2ea">
                     <SHORT-NAME>DltApplicationToProcessMapping</SHORT-NAME>
                     <DLT-APPLICATION-REF DEST="DLT-APPLICATION">/control_DltEcu/DefaultDltEcu/DefaultDltApplication</DLT-APPLICATION-REF>
                     <PROCESS-REF DEST="PROCESS">/control_Processes/DefaultInstance</PROCESS-REF>

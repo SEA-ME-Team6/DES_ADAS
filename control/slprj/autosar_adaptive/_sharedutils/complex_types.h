@@ -7,9 +7,9 @@
 //
 //  Code generation for model "control".
 //
-//  Model version              : 1.1
+//  Model version              : 1.2
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 20:33:01 2024
+//  C++ source code generated on : Wed Jun  5 20:40:55 2024
 
 
 #ifndef COMPLEX_TYPES_H
