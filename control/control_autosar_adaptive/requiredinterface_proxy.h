@@ -51,8 +51,8 @@ namespace proxy
       mEventId = 5608;
       mEventGroupId = 63603;
       Aeb.Init(mEventId, mEventGroupId);
-      mEventId = 63083;
-      mEventGroupId = 63603;
+      mEventId = 65364;
+      mEventGroupId = 65364;
       Lkas.Init(mEventId, mEventGroupId);
     }
 
