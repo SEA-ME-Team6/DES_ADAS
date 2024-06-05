@@ -1,0 +1,16 @@
+{
+	"unicast" : "127.000.000.001",
+	"applications" : [
+		{
+			"name" : "aeb",
+			"id" : "0x202D"
+		}
+	],
+	"services" : [
+		{
+			"service" : "0x1",
+			"instance" : "0x1",
+			"unreliable" : "30001"
+		}
+	]
+}

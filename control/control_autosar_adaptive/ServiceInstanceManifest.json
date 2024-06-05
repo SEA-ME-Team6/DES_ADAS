@@ -1,0 +1,27 @@
+{
+	"RequiredPorts" : {
+		"1" : {
+			"Binding" : [
+				"SOMEIP"
+			],
+			"EventGroupId" : "63603"
+		}
+	},
+	"ProvidedPorts" : {
+		},
+		"InstanceSpecifierToInstanceIdentifiers" : {
+			"control/control_RootSwComponentPrototype/RequiredPort" : {
+				"InstanceIdentifiers" : [
+					"1"
+				]
+			}
+		},
+		"PortToInstanceSpecifier" : {
+			"RequiredPort" : "control/control_RootSwComponentPrototype/RequiredPort"
+		},
+		"InstanceToClassTypeMapping" : {
+			"control_RootSwComponentPrototype" : "control"
+		},
+		"ClassTypeToMembersMapping" : {
+			}
+		}

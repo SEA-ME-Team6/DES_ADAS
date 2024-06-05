@@ -1,0 +1,1 @@
+Simulink block aeb/brake using SOME/IP EventId '46921' and EventGroupId '46921' for ara::com event communication.

@@ -1,0 +1,9 @@
+{
+	"unicast" : "127.000.000.001",
+	"applications" : [
+		{
+			"name" : "control",
+			"id" : "0x25B0"
+		}
+	]
+}

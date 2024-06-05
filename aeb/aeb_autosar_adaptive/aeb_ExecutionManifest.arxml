@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model aeb
+Model version                : 1.4
+Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
+XML source code generated on : Wed Jun 05 18:49:52 2024
+Model Checksum               : 459833195 2814171752 3563241098 3065672291
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>ModeDeclarationGroups</SHORT-NAME>
+            <ELEMENTS>
+                <MODE-DECLARATION-GROUP>
+                    <SHORT-NAME>ProcessStateMachine</SHORT-NAME>
+                    <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeDeclarationGroups/ProcessStateMachine/Idle</INITIAL-MODE-REF>
+                    <MODE-DECLARATIONS>
+                        <MODE-DECLARATION UUID="c7e1b472-5f94-5594-d2c6-b3b7106844e1">
+                            <SHORT-NAME>Idle</SHORT-NAME>
+                            <VALUE>1</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="614dd7af-1b8c-56ae-7bdb-28cf73cfe2e3">
+                            <SHORT-NAME>Starting</SHORT-NAME>
+                            <VALUE>2</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="adc36579-abe1-5754-929c-1d3db4607b44">
+                            <SHORT-NAME>Running</SHORT-NAME>
+                            <VALUE>3</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="adb85085-de49-581c-40ed-e1c2f742d0d1">
+                            <SHORT-NAME>Terminating</SHORT-NAME>
+                            <VALUE>4</VALUE>
+                        </MODE-DECLARATION>
+                        <MODE-DECLARATION UUID="a0113821-67f3-51be-da98-ad59001fc434">
+                            <SHORT-NAME>Terminated</SHORT-NAME>
+                            <VALUE>5</VALUE>
+                        </MODE-DECLARATION>
+                    </MODE-DECLARATIONS>
+                </MODE-DECLARATION-GROUP>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>aeb_Executable</SHORT-NAME>
+            <ELEMENTS>
+                <EXECUTABLE UUID="e265c36d-a535-54ad-a3c3-6b2a398f219b">
+                    <SHORT-NAME>aeb</SHORT-NAME>
+                    <BUILD-TYPE>BUILD-TYPE-DEBUG</BUILD-TYPE>
+                    <ROOT-SW-COMPONENT-PROTOTYPE UUID="a8035456-ca49-5d5c-b96a-6484bf54cb93">
+                        <SHORT-NAME>aeb_RootSwComponentPrototype</SHORT-NAME>
+                        <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/Components/aeb</APPLICATION-TYPE-TREF>
+                    </ROOT-SW-COMPONENT-PROTOTYPE>
+                </EXECUTABLE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>aeb_FunctionGroupSet</SHORT-NAME>
+            <ELEMENTS>
+                <FUNCTION-GROUP-SET UUID="4d80b4ca-3f2e-5a79-f7c9-aefefaa2de7e">
+                    <SHORT-NAME>DefaultFunctionGroupSet</SHORT-NAME>
+                    <FUNCTION-GROUPS>
+                        <MODE-DECLARATION-GROUP-PROTOTYPE UUID="ab88d8e4-de32-5aec-150a-8bd39040166b">
+                            <SHORT-NAME>MachineFG</SHORT-NAME>
+                            <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                            <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/MachineStates/MachineFG</TYPE-TREF>
+                        </MODE-DECLARATION-GROUP-PROTOTYPE>
+                    </FUNCTION-GROUPS>
+                </FUNCTION-GROUP-SET>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>aeb_ProcessDesigns</SHORT-NAME>
+            <ELEMENTS>
+                <PROCESS-DESIGN UUID="5709d5dc-752d-510e-fd6d-b6a394490384">
+                    <SHORT-NAME>DefaultProcessDesign</SHORT-NAME>
+                    <EXECUTABLE-REFS>
+                        <EXECUTABLE-REF DEST="EXECUTABLE">/aeb_Executable/aeb</EXECUTABLE-REF>
+                    </EXECUTABLE-REFS>
+                </PROCESS-DESIGN>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>aeb_ProcessToMachineMappingSet</SHORT-NAME>
+            <ELEMENTS>
+                <PROCESS-TO-MACHINE-MAPPING-SET UUID="91cd4607-0036-521d-c574-778db54636b4">
+                    <SHORT-NAME>ProcessToMachineMappingSet</SHORT-NAME>
+                    <PROCESS-TO-MACHINE-MAPPINGS>
+                        <PROCESS-TO-MACHINE-MAPPING UUID="f13fe0da-5da0-5842-c791-3ab60c16bb5f">
+                            <SHORT-NAME>DefaultMapping</SHORT-NAME>
+                            <MACHINE-REF DEST="MACHINE">/Machines/Host</MACHINE-REF>
+                            <PROCESS-REF DEST="PROCESS">/aeb_Processes/DefaultInstance</PROCESS-REF>
+                        </PROCESS-TO-MACHINE-MAPPING>
+                    </PROCESS-TO-MACHINE-MAPPINGS>
+                </PROCESS-TO-MACHINE-MAPPING-SET>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>aeb_Processes</SHORT-NAME>
+            <ELEMENTS>
+                <PROCESS UUID="91f36ad6-1676-567e-ea53-aff3663882ab">
+                    <SHORT-NAME>DefaultInstance</SHORT-NAME>
+                    <DESIGN-REF DEST="PROCESS-DESIGN">/aeb_ProcessDesigns/DefaultProcessDesign</DESIGN-REF>
+                    <EXECUTABLE-REFS>
+                        <EXECUTABLE-REF DEST="EXECUTABLE">/aeb_Executable/aeb</EXECUTABLE-REF>
+                    </EXECUTABLE-REFS>
+                    <PROCESS-STATE-MACHINE UUID="62181e74-6291-54df-e94d-ace9ed7be849">
+                        <SHORT-NAME>ProcessStateMachine_ModeDeclarationGroupElement</SHORT-NAME>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeDeclarationGroups/ProcessStateMachine</TYPE-TREF>
+                    </PROCESS-STATE-MACHINE>
+                    <STATE-DEPENDENT-STARTUP-CONFIGS>
+                        <STATE-DEPENDENT-STARTUP-CONFIG>
+                            <FUNCTION-GROUP-STATE-IREFS>
+                                <FUNCTION-GROUP-STATE-IREF>
+                                    <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/aeb_FunctionGroupSet/DefaultFunctionGroupSet/MachineFG</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                    <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MachineStates/MachineFG/Running</TARGET-MODE-DECLARATION-REF>
+                                </FUNCTION-GROUP-STATE-IREF>
+                            </FUNCTION-GROUP-STATE-IREFS>
+                            <RESOURCE-GROUP-REF DEST="RESOURCE-GROUP">/Machines/Host/HostOsInstantiation/DefaultResourceGroup</RESOURCE-GROUP-REF>
+                            <STARTUP-CONFIG-REF DEST="STARTUP-CONFIG">/aeb_StartupConfigs/StartupConfigRR</STARTUP-CONFIG-REF>
+                        </STATE-DEPENDENT-STARTUP-CONFIG>
+                    </STATE-DEPENDENT-STARTUP-CONFIGS>
+                </PROCESS>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>aeb_StartupConfigs</SHORT-NAME>
+            <ELEMENTS>
+                <STARTUP-CONFIG UUID="cba63e64-c41a-5076-9512-39a13cfcba0b">
+                    <SHORT-NAME>StartupConfigRR</SHORT-NAME>
+                    <PROCESS-ARGUMENTS>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-s</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ServiceInstanceManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-e</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ExecutionManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                    </PROCESS-ARGUMENTS>
+                    <SCHEDULING-POLICY>SCHEDULING-POLICY-ROUND-ROBIN</SCHEDULING-POLICY>
+                    <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="ab273d33-8ed4-54e1-0dfa-f271786526cd">
+                    <SHORT-NAME>StartupConfigFifo</SHORT-NAME>
+                    <PROCESS-ARGUMENTS>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-s</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ServiceInstanceManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-e</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ExecutionManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                    </PROCESS-ARGUMENTS>
+                    <SCHEDULING-POLICY>SCHEDULING-POLICY-FIFO</SCHEDULING-POLICY>
+                    <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="f730041b-c49f-50cd-054c-fa775fcf2da7">
+                    <SHORT-NAME>StartupConfigOther</SHORT-NAME>
+                    <PROCESS-ARGUMENTS>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-s</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ServiceInstanceManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>-e</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                        <PROCESS-ARGUMENT>
+                            <ARGUMENT>ExecutionManifest.json</ARGUMENT>
+                        </PROCESS-ARGUMENT>
+                    </PROCESS-ARGUMENTS>
+                    <SCHEDULING-POLICY>SCHEDULING-POLICY-OTHER</SCHEDULING-POLICY>
+                    <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
+                </STARTUP-CONFIG>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
