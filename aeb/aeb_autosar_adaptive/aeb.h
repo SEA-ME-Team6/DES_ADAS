@@ -7,9 +7,9 @@
 //
 //  Code generation for model "aeb".
 //
-//  Model version              : 1.4
+//  Model version              : 1.1
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 18:49:50 2024
+//  C++ source code generated on : Wed Jun  5 21:01:22 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -92,7 +92,6 @@ class aeb final
 //  These blocks were eliminated from the model due to optimizations:
 //
 //  Block '<Root>/Scope' : Unused code path elimination
-//  Block '<Root>/Scope1' : Unused code path elimination
 
 
 //-

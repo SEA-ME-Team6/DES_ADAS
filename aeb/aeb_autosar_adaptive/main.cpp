@@ -1,18 +1,18 @@
 /* Code generated for Simulink model aeb */
-/* Generated on Wed Jun 05 18:49:51 2024 */
+/* Generated on Wed Jun 05 21:02:45 2024 */
 
 #include <cstdint>
 #include <exception>
 #include <chrono>
 #include <functional>
 #include "PosixExecutor.hpp"
-#include "ara/core/initialization.h"
-#include "ara/core/result.h"
-#include "ara/core/string_view.h"
-// #include "ara/exec/execution_client.h"
-#include "ara/log/common.h"
-#include "ara/log/logger.h"
-#include "ara/log/log_stream.h"
+#include <ara/core/initialization.h>
+#include <ara/core/result.h>
+#include <ara/core/string_view.h>
+#include <ara/exec/execution_client.h>
+#include <ara/log/common.h>
+#include <ara/log/logger.h>
+#include <ara/log/log_stream.h>
 #include "aeb.h"
 
 /* main() handles the following: */
@@ -37,27 +37,27 @@ int32_t main() {
   } /* if */
 
   if (bAraInitialized) {
-    ara::log::Logger araLog = ara::log::CreateLogger(
-        std::string{"aeb"},
-        std::string{"Logger for aeb's main function."},
-        ara::log::LogLevel::kWarn);
+    ara::log::Logger &araLog{ara::log::CreateLogger(
+        ara::core::StringView{"aeb"},
+        ara::core::StringView{"Logger for aeb's main function."},
+        ara::log::LogLevel::kWarn)};
 
     /* Report Execution state */
-    // const ara::exec::ExecutionClient exec_client;
-    // try {
-    //   if (!exec_client.ReportExecutionState(
-    //           ara::exec::ExecutionState::kRunning)) {
-    //     araLog.LogError() << "Unable to report running state: "
-    //                          "ara::exec::ExecutionReturnType::kGeneralError.\n";
-    //     bProceed = false;
-    //   } else {
-    //     araLog.LogVerbose() << "Adaptive application entering running state.";
-    //   } /* if */
-    // } catch (std::exception const &e) {
-    //   araLog.LogError() << "Unable to report running state due to exception: "
-    //                     << e.what() << ".\n";
-    //   bProceed = false;
-    // }
+    const ara::exec::ExecutionClient exec_client;
+    try {
+      if (!exec_client.ReportExecutionState(
+              ara::exec::ExecutionState::kRunning)) {
+        araLog.LogError() << "Unable to report running state: "
+                             "ara::exec::ExecutionReturnType::kGeneralError.\n";
+        bProceed = false;
+      } else {
+        araLog.LogVerbose() << "Adaptive application entering running state.";
+      } /* if */
+    } catch (std::exception const &e) {
+      araLog.LogError() << "Unable to report running state due to exception: "
+                        << e.what() << ".\n";
+      bProceed = false;
+    }
 
     aeb aeb_Obj;
     if (bProceed) {

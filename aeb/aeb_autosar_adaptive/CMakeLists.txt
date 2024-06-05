@@ -54,22 +54,13 @@ elseif(WIN32 AND ("${CMAKE_SYSTEM_PROCESSOR}" STREQUAL AMD64))
 endif()
 
 
-
-# Add common link_directories, including any platform-specific paths under 
-# MATLAB_ROOT.
-# set(EXTRA_SYSLIB_PATHS 
-#     # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/libraries/glnxa64
-#     # ${SPKG_ROOT}/bin/glnxa64/dlt-daemon/lib
-#     # ${SPKG_ROOT}/bin/glnxa64/vsomeip/lib)
-# list(APPEND CMAKE_LIBRARY_PATH ${EXTRA_SYSLIB_PATHS})
-# link_directories(${EXTRA_SYSLIB_PATHS})
-# if(DEFINED MATLAB_ROOT_SYSLIB_PATHS)
-#     list(APPEND CMAKE_LIBRARY_PATH ${MATLAB_ROOT_SYSLIB_PATHS})
-#     link_directories(${MATLAB_ROOT_SYSLIB_PATHS})
-# endif()
-# if(DEFINED MATLAB_ROOT_SYSINCLUDE_PATHS)
-#     list(APPEND CMAKE_INCLUDE_PATH ${MATLAB_ROOT_SYSINCLUDE_PATHS})
-# endif()
+if(DEFINED MATLAB_ROOT_SYSLIB_PATHS)
+    list(APPEND CMAKE_LIBRARY_PATH ${MATLAB_ROOT_SYSLIB_PATHS})
+    link_directories(${MATLAB_ROOT_SYSLIB_PATHS})
+endif()
+if(DEFINED MATLAB_ROOT_SYSINCLUDE_PATHS)
+    list(APPEND CMAKE_INCLUDE_PATH ${MATLAB_ROOT_SYSINCLUDE_PATHS})
+endif()
 
 
 
@@ -77,37 +68,20 @@ endif()
 ## Required packages
 ###########################################################################
 find_package(Threads REQUIRED)
-find_package(Boost 1.55 COMPONENTS system thread log REQUIRED)
-find_package(vsomeip3 REQUIRED)
 
 ###########################################################################
 ## System Libraries
 ###########################################################################
 find_library(FOUND_LIBM m NO_SYSTEM_ENVIRONMENT_PATH PATHS ${CMAKE_C_IMPLICIT_LINK_DIRECTORIES} ${CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES})
-find_library(LIB_DL NAMES dl libdl REQUIRED)
-find_library(LIB_RT NAMES rt librt REQUIRED)
 
 ###########################################################################
 ## Target definition and commands
 ###########################################################################
 
-file(GLOB ARA_COM_SOURCES "${CMAKE_SOURCE_DIR}/ara/com/*.cpp")
-file(GLOB ARA_COM_VSOMEIP_SOURCES "${CMAKE_SOURCE_DIR}/ara/com/vsomeip/*.cpp")
-file(GLOB ARA_CORE_SOURCES "${CMAKE_SOURCE_DIR}/ara/core/*.cpp")
-# file(GLOB ARA_DIAG_SOURCES "${CMAKE_SOURCE_DIR}/ara/diag/*.cpp")
-# file(GLOB ARA_EXEC_SOURCES "${CMAKE_SOURCE_DIR}/ara/exec/*.cpp")
-file(GLOB ARA_LOG_SOURCES "${CMAKE_SOURCE_DIR}/ara/log/*.cpp")
-
 # Definition of target "aeb".
 add_executable(aeb  /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
     ${START_DIR}/aeb_autosar_adaptive/aeb.cpp
-    ${START_DIR}/aeb_autosar_adaptive/main.cpp
-    ${ARA_COM_SOURCES}
-    ${ARA_COM_VSOMEIP_SOURCES}
-    ${ARA_CORE_SOURCES}
-    # ${ARA_DIAG_SOURCES}
-    # ${ARA_EXEC_SOURCES}
-    ${ARA_LOG_SOURCES})
+    ${START_DIR}/aeb_autosar_adaptive/main.cpp)
 
 # Set properties for target "aeb".
 set_target_properties(aeb PROPERTIES PREFIX ""
@@ -134,9 +108,7 @@ target_compile_definitions(aeb PRIVATE -DMAX_CONN_RASPI
     -DMAT_FILE=0
     -DMULTI_INSTANCE_CODE=1
     -DINTEGER_CODE=0
-    -DMT=0
-    -DARA_VER_22_11
-    -DENABLE_VSOMEIP)
+    -DMT=0)
 
 # Specify compiler flags for target "aeb".
 target_compile_options(aeb PRIVATE -std=c++11
@@ -150,56 +122,23 @@ target_include_directories(aeb PRIVATE ${START_DIR}
     ${START_DIR}/aeb_autosar_adaptive
     ${MATLAB_ROOT}/toolbox/coder/simulinkcoder/src/executor
     ${START_DIR}/aeb_autosar_adaptive/stub/aragen
+    ${MATLAB_ROOT}/sys/FastDDS/glnxa64/include
     ${MATLAB_ROOT}/extern/include
     ${MATLAB_ROOT}/simulink/include
     ${MATLAB_ROOT}/rtw/c/src
     ${MATLAB_ROOT}/rtw/c/src/ext_mode/common
     ${MATLAB_ROOT}/rtw/c/ert
-    ${START_DIR}/slprj/autosar_adaptive/_sharedutils
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/headers/glnxa64/22_11
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/headers/glnxa64/ud_ipc
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/headers/glnxa64/dds_util
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/headers/glnxa64/com_factory
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/headers/glnxa64/log_utils
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/headers/glnxa64/manifest_utils
-    # ${SPKG_ROOT}/bin/glnxa64/dlt-daemon/include
-    # ${SPKG_ROOT}/bin/glnxa64/vsomeip/include
-    ${Boost_INCLUDE_DIR}
-    ${CMAKE_SOURCE_DIR}/ara/com
-    ${CMAKE_SOURCE_DIR}/ara/core
-    # ${CMAKE_SOURCE_DIR}/ara/diag
-    # ${CMAKE_SOURCE_DIR}/ara/exec
-    ${CMAKE_SOURCE_DIR}/ara/log)
+    ${START_DIR}/slprj/autosar_adaptive/_sharedutils)
 
 # Specify library link dependencies for target "aeb". CMake generator 
 # expressions are used to create a CMakeLists.txt file that supports 
 # multiple platforms with differently named system library dependencies.
-target_link_libraries(aeb PRIVATE 
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/libraries/glnxa64/libmwara_com_22_11.so
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/libraries/glnxa64/libmwara_exec_22_11.so
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/libraries/glnxa64/libmwara_log_22_11.so
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/libraries/glnxa64/libmwara_per_22_11.so
-    # ${SPKG_ROOT}/toolbox/coder/ara/mw_ara/libraries/glnxa64/libmwara_manifest_utils.so
-    ${MATLAB_ROOT}/bin/glnxa64/libmwboost_thread.so.1.78.0
-    ${MATLAB_ROOT}/bin/glnxa64/libmwboost_chrono.so.1.78.0
-    ${MATLAB_ROOT}/bin/glnxa64/libmwboost_timer.so.1.78.0
-    ${MATLAB_ROOT}/bin/glnxa64/libmwboost_filesystem.so.1.78.0
-    ${MATLAB_ROOT}/bin/glnxa64/libsqlite3.so.3
-    ${SPKG_ROOT}/bin/glnxa64/dlt-daemon/lib/libdlt.so
-    ${SPKG_ROOT}/bin/glnxa64/dlt-daemon/lib/libdlt.so.2
-    # ${SPKG_ROOT}/bin/glnxa64/vsomeip/lib/libvsomeip3.so.3
-    # ${SPKG_ROOT}/bin/glnxa64/vsomeip/lib/libvsomeip3-sd.so.3
-    # ${SPKG_ROOT}/bin/glnxa64/vsomeip/lib/libvsomeip3-cfg.so.3
-    ${LIB_DL}
-    ${LIB_RT}
-    Threads::Threads
+target_link_libraries(aeb PRIVATE Threads::Threads
     $<$<BOOL:${FOUND_LIBM}>:m>
     $<$<BOOL:${WIN32}>:kernel32>
     $<$<BOOL:${WIN32}>:ws2_32>
     $<$<BOOL:${WIN32}>:mswsock>
-    $<$<BOOL:${WIN32}>:advapi32>
-    ${Boost_LIBRARIES}
-    vsomeip3)
+    $<$<BOOL:${WIN32}>:advapi32>)
 
 # Extract DWARF debug symbols into a separate file when building 
 # executable programs for Apple platforms.
