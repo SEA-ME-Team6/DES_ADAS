@@ -167,10 +167,24 @@ CMakeFiles/lkas.dir/lkas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/lkas.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp -o CMakeFiles/lkas.dir/lkas.cpp.s
 
+CMakeFiles/lkas.dir/lkas_data.cpp.o: CMakeFiles/lkas.dir/flags.make
+CMakeFiles/lkas.dir/lkas_data.cpp.o: ../lkas_data.cpp
+CMakeFiles/lkas.dir/lkas_data.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lkas.dir/lkas_data.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/lkas_data.cpp.o -MF CMakeFiles/lkas.dir/lkas_data.cpp.o.d -o CMakeFiles/lkas.dir/lkas_data.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp
+
+CMakeFiles/lkas.dir/lkas_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/lkas_data.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp > CMakeFiles/lkas.dir/lkas_data.cpp.i
+
+CMakeFiles/lkas.dir/lkas_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/lkas_data.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp -o CMakeFiles/lkas.dir/lkas_data.cpp.s
+
 CMakeFiles/lkas.dir/main.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/main.cpp.o: ../main.cpp
 CMakeFiles/lkas.dir/main.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lkas.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lkas.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/main.cpp.o -MF CMakeFiles/lkas.dir/main.cpp.o.d -o CMakeFiles/lkas.dir/main.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp
 
 CMakeFiles/lkas.dir/main.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/lkas.dir/main.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o: ../ara/com/instance_identifier.cpp
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o -MF CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp
 
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o: ../ara/com/resolve_instance.cpp
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o -MF CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp
 
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o: ../ara/com/service_factory.cpp
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o -MF CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp
 
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/lkas.dir/ara/com/service_factory.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o: ../ara/com/vsomeip/vsomeip_client.cpp
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o -MF CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o: ../ara/com/vsomeip/vsomeip_server.cpp
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o -MF CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.o: ../ara/core/error_code.cpp
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lkas.dir/ara/core/error_code.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lkas.dir/ara/core/error_code.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/core/error_code.cpp.o -MF CMakeFiles/lkas.dir/ara/core/error_code.cpp.o.d -o CMakeFiles/lkas.dir/ara/core/error_code.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp
 
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/lkas.dir/ara/core/error_code.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o: ../ara/core/instance_specifier.cpp
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o -MF CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o.d -o CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp
 
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o: ../ara/log/log_stream.cpp
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o -MF CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o.d -o CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp
 
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/lkas.dir/ara/log/log_stream.cpp.s: cmake_force
 CMakeFiles/lkas.dir/ara/log/logger.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/log/logger.cpp.o: ../ara/log/logger.cpp
 CMakeFiles/lkas.dir/ara/log/logger.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lkas.dir/ara/log/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lkas.dir/ara/log/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/log/logger.cpp.o -MF CMakeFiles/lkas.dir/ara/log/logger.cpp.o.d -o CMakeFiles/lkas.dir/ara/log/logger.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp
 
 CMakeFiles/lkas.dir/ara/log/logger.cpp.i: cmake_force
@@ -316,6 +330,7 @@ lkas_OBJECTS = \
 "CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o" \
 "CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o" \
 "CMakeFiles/lkas.dir/lkas.cpp.o" \
+"CMakeFiles/lkas.dir/lkas_data.cpp.o" \
 "CMakeFiles/lkas.dir/main.cpp.o" \
 "CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o" \
 "CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o" \
@@ -337,6 +352,7 @@ lkas: CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd
 lkas: CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o
 lkas: CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o
 lkas: CMakeFiles/lkas.dir/lkas.cpp.o
+lkas: CMakeFiles/lkas.dir/lkas_data.cpp.o
 lkas: CMakeFiles/lkas.dir/main.cpp.o
 lkas: CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o
 lkas: CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o
@@ -351,7 +367,7 @@ lkas: CMakeFiles/lkas.dir/build.make
 lkas: slprj/autosar_adaptive/_sharedutils/rtwshared.a
 lkas: /usr/local/lib/libvsomeip3.so.3.1.20
 lkas: CMakeFiles/lkas.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable lkas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable lkas"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lkas.dir/link.txt --verbose=$(VERBOSE)
 	/usr/local/bin/cmake -E cmake_echo_color --cyan \#\#\#\ Created\ executable:\ /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/lkas
 

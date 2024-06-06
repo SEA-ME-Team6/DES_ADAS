@@ -5,7 +5,7 @@
 
    Code generated for Simulink Adaptive model: "lkas"
    AUTOSAR AP Release: "22-11"
-   On: "Wed Jun 05 13:41:50 2024"  */
+   On: "Thu Jun 06 12:21:28 2024"  */
 
 #ifndef PROVIDEDINTERFACE_SKELETON_H_
 #define PROVIDEDINTERFACE_SKELETON_H_
@@ -23,6 +23,7 @@ namespace skeleton
   namespace events
   {
     using Distance_error = ara::com::SkeletonEvent<double>;
+    using Throttle = ara::com::SkeletonEvent<double>;
   }                                    /* namespace events */
 
   namespace methods
@@ -70,18 +71,23 @@ namespace skeleton
       uint16_t mEventId, mEventGroupId;
       uint16_t mMethodId;
       mEventId = 65364;
-      mEventGroupId = 65364;
-      Distance_error.Init(mHndl,mEventId, mEventGroupId);
+      mEventGroupId = 46570;
+      Distance_error.Init(mHndl, mEventId, mEventGroupId);
+      mEventId = 41622;
+      mEventGroupId = 46570;
+      Throttle.Init(mHndl, mEventId, mEventGroupId);
       return ara::core::Result<void>::FromValue();
     }
 
     inline void StopOfferService()
     {
       Distance_error.Deinit();
+      Throttle.Deinit();
       // ara::com::ServiceFactory::DestroyService(mHndl);
     }
 
     skeleton::events::Distance_error Distance_error;
+    skeleton::events::Throttle Throttle;
    private:
     ara::com::ServiceHandleType mHndl;
     ara::com::MethodCallProcessingMode mMethodProcMode;

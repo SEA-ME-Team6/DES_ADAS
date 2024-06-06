@@ -68,7 +68,6 @@ endif()
 ## Required packages
 ###########################################################################
 find_package(Threads REQUIRED)
-find_package(Threads REQUIRED)
 find_package(Boost 1.55 COMPONENTS system thread log REQUIRED)
 find_package(vsomeip3 REQUIRED)
 
@@ -102,6 +101,7 @@ add_executable(lkas  /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbo
     ${MATLAB_ROOT}/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c
     /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
     ${START_DIR}/lkas_autosar_adaptive/lkas.cpp
+    ${START_DIR}/lkas_autosar_adaptive/lkas_data.cpp
     ${START_DIR}/lkas_autosar_adaptive/main.cpp
     ${ARA_COM_SOURCES}
     ${ARA_COM_VSOMEIP_SOURCES}
@@ -177,7 +177,6 @@ target_link_libraries(lkas PRIVATE rtwshared
     $<$<BOOL:${WIN32}>:ws2_32>
     $<$<BOOL:${WIN32}>:mswsock>
     $<$<BOOL:${WIN32}>:advapi32>
-    Threads::Threads
     vsomeip3)
 
 # Extract DWARF debug symbols into a separate file when building 

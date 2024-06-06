@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model lkas
-Model version                : 1.3
+Model version                : 1.2
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 13:41:51 2024
-Model Checksum               : 1240301461 3939160243 2477690280 776746313
+XML source code generated on : Thu Jun 06 12:21:31 2024
+Model Checksum               : 3798081344 3312996295 3971267449 2562179778
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>Components</SHORT-NAME>
             <ELEMENTS>
-                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE UUID="54fc717b-7b57-5e37-71ad-c2f914adb12b">
+                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE UUID="3143fbe4-e891-5628-c0d9-662f35dc3eda">
                     <SHORT-NAME>lkas</SHORT-NAME>
                     <PORTS>
-                        <P-PORT-PROTOTYPE UUID="7df4d872-2b67-59cd-44eb-dfae43bfd1a7">
+                        <P-PORT-PROTOTYPE UUID="53a5ede5-f5b5-5815-3180-7ed589e9138b">
                             <SHORT-NAME>ProvidedPort</SHORT-NAME>
                             <PROVIDED-COM-SPECS>
                                 <QUEUED-SENDER-COM-SPEC>
                                     <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Distance_error</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                </QUEUED-SENDER-COM-SPEC>
+                                <QUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Throttle</DATA-ELEMENT-REF>
                                     <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
                                     <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
                                 </QUEUED-SENDER-COM-SPEC>

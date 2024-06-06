@@ -7,9 +7,9 @@
 //
 //  Code generation for model "lkas".
 //
-//  Model version              : 1.3
+//  Model version              : 1.2
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 13:41:48 2024
+//  C++ source code generated on : Thu Jun  6 12:21:23 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -54,14 +54,13 @@ class lkas final
     int32_t tmp_data_k[307200];
     int32_t tmp_data_c[307200];
     int32_t tmp_data_b[307200];
-    std::array<uint8_t, 921600> outputImage;// '<S1>/MATLAB Function'
     std::array<int8_t, 307200> inputImage;
     std::array<bool, 307200> bv;
     std::array<bool, 307200> bv1;
-    std::array<uint8_t, 307200> uv3;
     std::array<uint8_t, 307200> uv;
     std::array<uint8_t, 307200> uv1;
     std::array<uint8_t, 307200> uv2;
+    std::array<uint8_t, 307200> uv3;
     bool b_data[307200];
     bool c_data[307200];
     bool d_data[307200];
@@ -75,15 +74,22 @@ class lkas final
     bool tmp_data_g1[307200];
     bool tmp_data_m[307200];
     bool tmp_data_n[307200];
+    double OutportBufferForthrottle;   // '<S1>/Constant'
     double error;                      // '<S3>/MATLAB Function1'
+    std::array<uint8_t, 921600> outputImage;// '<S1>/MATLAB Function'
   };
 
   // Block states (default storage) for system '<Root>'
   struct DW_lkas_T {
     codertarget_raspi_internal_Raspiv4l2Capture_lkas_T obj;// '<S1>/V4L2 Video Capture' 
     vision_internal_blocks_Warp_lkas_T obj_p;// '<S5>/Warp'
-    codertarget_raspi_internal_RaspiTCPReceive_lkas_T obj_l;// '<Root>/TCP//IP Receive' 
+    codertarget_raspi_internal_RaspiTCPReceive_lkas_T obj_e;// '<Root>/TCP//IP Receive' 
     std::array<double, 921600> ColorSpaceConversion_DWORK1;// '<S5>/Color Space  Conversion' 
+  };
+
+  // Invariant block signals (default storage)
+  struct ConstB_lkas_T {
+    double Constant;                   // '<S1>/Constant'
   };
 
   // Copy Constructor
@@ -130,12 +136,16 @@ class lkas final
     varargout_3[307200]);
   void lkas_Warp_stepImpl(vision_internal_blocks_Warp_lkas_T *b_this, const bool
     Image[307200], const double input2[9], bool Jout[307200]);
+  void lkas_eml_find(const bool x[307200], int32_t i_data[], int32_t *i_size,
+                     int32_t j_data[], int32_t *j_size);
   void lkas_and(bool in1_data[], int32_t *in1_size, const bool in2_data[], const
                 int32_t *in2_size, const bool in3_data[], const int32_t
                 *in3_size);
   void lkas_binary_expand_op_3(bool in1_data[], int32_t *in1_size, const bool
     in2_data[], const int32_t *in2_size, const int32_t in3_data[], const int32_t
     *in3_size);
+  double lkas_mean(const double x_data[], const int32_t *x_size);
+  double lkas_maximum(const double x_data[], const int32_t *x_size);
   void lkas_binary_expand_op_2(bool in1_data[], int32_t *in1_size, const bool
     in2_data[], const int32_t *in2_size, const bool in3_data[], const bool
     in4_data[], const int32_t *in4_size, const bool in5_data[], const int32_t
@@ -154,6 +164,8 @@ class lkas final
   void lkas_SystemCore_setup_h(codertarget_raspi_internal_RaspiTCPReceive_lkas_T
     *obj);
 };
+
+extern const lkas::ConstB_lkas_T lkas_ConstB;// constant block i/o
 
 //-
 //  These blocks were eliminated from the model due to optimizations:

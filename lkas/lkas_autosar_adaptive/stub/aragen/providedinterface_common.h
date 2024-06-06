@@ -5,7 +5,7 @@
 
    Code generated for Simulink Adaptive model: "lkas"
    AUTOSAR AP Release: "22-11"
-   On: "Wed Jun 05 13:41:50 2024"  */
+   On: "Thu Jun 06 12:21:28 2024"  */
 
 #ifndef PROVIDEDINTERFACE_COMMON_H_
 #define PROVIDEDINTERFACE_COMMON_H_

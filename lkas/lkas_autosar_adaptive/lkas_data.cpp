@@ -1,5 +1,5 @@
 //
-//  QRV2Norm_double.h
+//  lkas_data.cpp
 //
 //  Academic License - for use in teaching, academic research, and meeting
 //  course requirements at degree granting institutions only.  Not for
@@ -10,15 +10,17 @@
 //  Model version              : 1.2
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
 //  C++ source code generated on : Thu Jun  6 12:21:23 2024
-//  Created for block: lkas
+//
+//  Target selection: autosar_adaptive.tlc
+//  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
+//  Code generation objectives: Unspecified
+//  Validation result: Not run
 
 
-#ifndef QRV2Norm_double_h_
-#define QRV2Norm_double_h_
-#include <stdbool.h>
-#include <stdint.h>
-#include "complex_types.h"
+#include "lkas.h"
 
-extern void QRV2Norm_double(const double V[], int32_t N, double v2norm[]);
-
-#endif                                 // QRV2Norm_double_h_
+// Invariant block signals (default storage)
+const lkas::ConstB_lkas_T lkas_ConstB{
+  0.45
+  // '<S1>/Constant'
+};

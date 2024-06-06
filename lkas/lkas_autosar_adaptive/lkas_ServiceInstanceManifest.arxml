@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model lkas
-Model version                : 1.3
+Model version                : 1.2
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 13:41:51 2024
-Model Checksum               : 1240301461 3939160243 2477690280 776746313
+XML source code generated on : Thu Jun 06 12:21:31 2024
+Model Checksum               : 3798081344 3312996295 3971267449 2562179778
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>lkas_CommunicationCluster</SHORT-NAME>
             <ELEMENTS>
-                <ETHERNET-CLUSTER UUID="ff4db932-ed31-5f58-ba29-981fd2e9efb2">
+                <ETHERNET-CLUSTER UUID="69fadc29-0c80-5fda-06e7-72d88ab0cc1d">
                     <SHORT-NAME>ComCluster</SHORT-NAME>
                     <ETHERNET-CLUSTER-VARIANTS>
                         <ETHERNET-CLUSTER-CONDITIONAL>
                             <PHYSICAL-CHANNELS>
-                                <ETHERNET-PHYSICAL-CHANNEL UUID="99b386eb-1d0f-527a-94ce-1e4ebd78a9ee">
+                                <ETHERNET-PHYSICAL-CHANNEL UUID="36923496-7c9f-5426-d388-14915bfd2e87">
                                     <SHORT-NAME>PhysicalChannel</SHORT-NAME>
                                     <NETWORK-ENDPOINTS>
-                                        <NETWORK-ENDPOINT UUID="c7c8f52c-47d3-505f-16dd-3c3b146c079f">
+                                        <NETWORK-ENDPOINT UUID="0d0299d9-7326-52a6-89a2-d46540086e92">
                                             <SHORT-NAME>NetworkEndpoint</SHORT-NAME>
                                             <NETWORK-ENDPOINT-ADDRESSES>
                                                 <IPV-4-CONFIGURATION>
@@ -38,21 +38,51 @@ Model Checksum               : 1240301461 3939160243 2477690280 776746313
         <AR-PACKAGE>
             <SHORT-NAME>lkas_Deployments</SHORT-NAME>
             <ELEMENTS>
-                <SOMEIP-SERVICE-INTERFACE-DEPLOYMENT UUID="db452b54-2939-55f3-2b98-afaa5ac2e88f">
+                <DDS-SERVICE-INTERFACE-DEPLOYMENT UUID="75aa0b85-6d68-5bdb-a5d4-9d3adb676ca4">
+                    <SHORT-NAME>DdsDeployment_ProvidedPort</SHORT-NAME>
+                    <EVENT-DEPLOYMENTS>
+                        <DDS-EVENT-DEPLOYMENT UUID="c78a2f2f-8e1f-5739-386d-6890c55d8244">
+                            <SHORT-NAME>Deployment_Distance_error</SHORT-NAME>
+                            <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Distance_error</EVENT-REF>
+                            <TOPIC-NAME>Distance_error</TOPIC-NAME>
+                            <TRANSPORT-PROTOCOLS>
+                                <TRANSPORT-PROTOCOL>TCP</TRANSPORT-PROTOCOL>
+                            </TRANSPORT-PROTOCOLS>
+                        </DDS-EVENT-DEPLOYMENT>
+                        <DDS-EVENT-DEPLOYMENT UUID="f326eef9-cd1b-533d-8859-64bbb5cba133">
+                            <SHORT-NAME>Deployment_Throttle</SHORT-NAME>
+                            <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Throttle</EVENT-REF>
+                            <TOPIC-NAME>Throttle</TOPIC-NAME>
+                            <TRANSPORT-PROTOCOLS>
+                                <TRANSPORT-PROTOCOL>TCP</TRANSPORT-PROTOCOL>
+                            </TRANSPORT-PROTOCOLS>
+                        </DDS-EVENT-DEPLOYMENT>
+                    </EVENT-DEPLOYMENTS>
+                    <TRANSPORT-PROTOCOLS>
+                        <TRANSPORT-PROTOCOL>TCP</TRANSPORT-PROTOCOL>
+                    </TRANSPORT-PROTOCOLS>
+                </DDS-SERVICE-INTERFACE-DEPLOYMENT>
+                <SOMEIP-SERVICE-INTERFACE-DEPLOYMENT UUID="ea761791-b640-5582-1747-9130f0f3ed75">
                     <SHORT-NAME>SomeipDeployment_ProvidedPort</SHORT-NAME>
                     <EVENT-DEPLOYMENTS>
-                        <SOMEIP-EVENT-DEPLOYMENT UUID="c4222174-d048-511c-0bd6-32a318ba31e4">
+                        <SOMEIP-EVENT-DEPLOYMENT UUID="a06a94a4-e3cc-5eaf-3191-33b6e556a274">
                             <SHORT-NAME>Deployment_Distance_error</SHORT-NAME>
                             <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Distance_error</EVENT-REF>
                             <EVENT-ID>65364</EVENT-ID>
                         </SOMEIP-EVENT-DEPLOYMENT>
+                        <SOMEIP-EVENT-DEPLOYMENT UUID="b3182689-3500-5d2f-8d36-a153ebf606a8">
+                            <SHORT-NAME>Deployment_Throttle</SHORT-NAME>
+                            <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Throttle</EVENT-REF>
+                            <EVENT-ID>41622</EVENT-ID>
+                        </SOMEIP-EVENT-DEPLOYMENT>
                     </EVENT-DEPLOYMENTS>
                     <EVENT-GROUPS>
-                        <SOMEIP-EVENT-GROUP UUID="97a0bdf4-bc43-5490-8139-4fddde1eb17b">
+                        <SOMEIP-EVENT-GROUP UUID="13007775-388b-5dce-b23b-99cd1792789c">
                             <SHORT-NAME>EventGroup_ProvidedPort</SHORT-NAME>
-                            <EVENT-GROUP-ID>65364</EVENT-GROUP-ID>
+                            <EVENT-GROUP-ID>46570</EVENT-GROUP-ID>
                             <EVENT-REFS>
                                 <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/lkas_Deployments/SomeipDeployment_ProvidedPort/Deployment_Distance_error</EVENT-REF>
+                                <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/lkas_Deployments/SomeipDeployment_ProvidedPort/Deployment_Throttle</EVENT-REF>
                             </EVENT-REFS>
                         </SOMEIP-EVENT-GROUP>
                     </EVENT-GROUPS>
@@ -62,10 +92,10 @@ Model Checksum               : 1240301461 3939160243 2477690280 776746313
         <AR-PACKAGE>
             <SHORT-NAME>lkas_MachineDesign</SHORT-NAME>
             <ELEMENTS>
-                <MACHINE-DESIGN UUID="8243e05f-04b1-5364-7568-c4f05eb78982">
+                <MACHINE-DESIGN UUID="eeea5c5f-88e2-5b82-3a3b-3be61215f0b5">
                     <SHORT-NAME>MachineDesign</SHORT-NAME>
                     <COMMUNICATION-CONNECTORS>
-                        <ETHERNET-COMMUNICATION-CONNECTOR UUID="1dce7d03-967a-5930-5e22-173ac686d770">
+                        <ETHERNET-COMMUNICATION-CONNECTOR UUID="c3490414-6046-5ddd-39d0-90b2f33b8177">
                             <SHORT-NAME>CommunicationConnector</SHORT-NAME>
                             <UNICAST-NETWORK-ENDPOINT-REFS>
                                 <UNICAST-NETWORK-ENDPOINT-REF DEST="NETWORK-ENDPOINT">/lkas_CommunicationCluster/ComCluster/PhysicalChannel/NetworkEndpoint</UNICAST-NETWORK-ENDPOINT-REF>
@@ -78,14 +108,21 @@ Model Checksum               : 1240301461 3939160243 2477690280 776746313
         <AR-PACKAGE>
             <SHORT-NAME>lkas_ServiceInstToMachineMap</SHORT-NAME>
             <ELEMENTS>
-                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="bdb119ac-2e79-59fc-f8d1-51bd5525a7c3">
+                <DDS-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="82ffb379-e556-56f1-c808-1be4ff842e92">
+                    <SHORT-NAME>DdsServiceInstToMachineMap_DdsSI_ProvidedPort</SHORT-NAME>
+                    <COMMUNICATION-CONNECTOR-REF DEST="COMMUNICATION-CONNECTOR">/lkas_MachineDesign/MachineDesign/CommunicationConnector</COMMUNICATION-CONNECTOR-REF>
+                    <SERVICE-INSTANCE-REFS>
+                        <SERVICE-INSTANCE-REF DEST="DDS-PROVIDED-SERVICE-INSTANCE">/lkas_ServiceInstances/DdsSI_ProvidedPort</SERVICE-INSTANCE-REF>
+                    </SERVICE-INSTANCE-REFS>
+                </DDS-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="d937f566-a6fd-5bc7-8a71-8430b01cafdb">
                     <SHORT-NAME>SomeIpServiceInstToMachineMap_SomeipSI_ProvidedPort</SHORT-NAME>
                     <COMMUNICATION-CONNECTOR-REF DEST="COMMUNICATION-CONNECTOR">/lkas_MachineDesign/MachineDesign/CommunicationConnector</COMMUNICATION-CONNECTOR-REF>
                     <SERVICE-INSTANCE-REFS>
                         <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/lkas_ServiceInstances/SomeipSI_ProvidedPort</SERVICE-INSTANCE-REF>
                     </SERVICE-INSTANCE-REFS>
                 </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
-                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="be2b85b3-f4d2-58a3-44dd-fb0ece75f65d">
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="22d18883-6b97-5ea7-4ad0-7bf165017190">
                     <SHORT-NAME>SomeIpServiceInstToMachineMap_SomeipSI_ProvidedPort_SomeipSI_ProvidedPort</SHORT-NAME>
                     <COMMUNICATION-CONNECTOR-REF DEST="COMMUNICATION-CONNECTOR">/lkas_MachineDesign/MachineDesign/CommunicationConnector</COMMUNICATION-CONNECTOR-REF>
                     <SERVICE-INSTANCE-REFS>
@@ -97,7 +134,7 @@ Model Checksum               : 1240301461 3939160243 2477690280 776746313
         <AR-PACKAGE>
             <SHORT-NAME>lkas_ServiceInstanceToPortMappings</SHORT-NAME>
             <ELEMENTS>
-                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="7276489e-a49e-549a-01e3-5880311fb466">
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="6024c649-3e25-5130-f93a-10184987e283">
                     <SHORT-NAME>Mapping_ProvidedPort</SHORT-NAME>
                     <PORT-PROTOTYPE-IREF>
                         <CONTEXT-COMPONENT-PROTOTYPE-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/lkas</CONTEXT-COMPONENT-PROTOTYPE-REF>
@@ -111,11 +148,27 @@ Model Checksum               : 1240301461 3939160243 2477690280 776746313
         <AR-PACKAGE>
             <SHORT-NAME>lkas_ServiceInstances</SHORT-NAME>
             <ELEMENTS>
-                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="bde9748a-26cc-51c5-ef75-4961bd7c4257">
+                <DDS-PROVIDED-SERVICE-INSTANCE UUID="eb769b0c-e9be-5e67-70d1-a079db2f817b">
+                    <SHORT-NAME>DdsSI_ProvidedPort</SHORT-NAME>
+                    <SERVICE-INTERFACE-DEPLOYMENT-REF DEST="DDS-SERVICE-INTERFACE-DEPLOYMENT">/lkas_Deployments/DdsDeployment_ProvidedPort</SERVICE-INTERFACE-DEPLOYMENT-REF>
+                    <DOMAIN-ID>0</DOMAIN-ID>
+                    <EVENT-QOS-PROPSS>
+                        <DDS-EVENT-QOS-PROPS>
+                            <QOS-PROFILE>RELIABLE</QOS-PROFILE>
+                            <EVENT-REF DEST="DDS-EVENT-DEPLOYMENT">/lkas_Deployments/DdsDeployment_ProvidedPort/Deployment_Distance_error</EVENT-REF>
+                        </DDS-EVENT-QOS-PROPS>
+                        <DDS-EVENT-QOS-PROPS>
+                            <QOS-PROFILE>RELIABLE</QOS-PROFILE>
+                            <EVENT-REF DEST="DDS-EVENT-DEPLOYMENT">/lkas_Deployments/DdsDeployment_ProvidedPort/Deployment_Throttle</EVENT-REF>
+                        </DDS-EVENT-QOS-PROPS>
+                    </EVENT-QOS-PROPSS>
+                    <SERVICE-INSTANCE-ID>1</SERVICE-INSTANCE-ID>
+                </DDS-PROVIDED-SERVICE-INSTANCE>
+                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="b07fe329-6b45-5a26-6f9e-4487c973c21d">
                     <SHORT-NAME>SomeipSI_ProvidedPort</SHORT-NAME>
                     <SERVICE-INTERFACE-DEPLOYMENT-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/lkas_Deployments/SomeipDeployment_ProvidedPort</SERVICE-INTERFACE-DEPLOYMENT-REF>
                     <PROVIDED-EVENT-GROUPS>
-                        <SOMEIP-PROVIDED-EVENT-GROUP UUID="b2db6af4-2b05-5c07-7b1c-019b96b607b5">
+                        <SOMEIP-PROVIDED-EVENT-GROUP UUID="724f9ade-0d46-5896-b83b-e8a1c7cbc4f3">
                             <SHORT-NAME>ProvidedEventGroup_ProvidedPort</SHORT-NAME>
                             <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/lkas_Deployments/SomeipDeployment_ProvidedPort/EventGroup_ProvidedPort</EVENT-GROUP-REF>
                         </SOMEIP-PROVIDED-EVENT-GROUP>

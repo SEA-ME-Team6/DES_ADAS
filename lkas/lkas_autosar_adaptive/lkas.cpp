@@ -7,9 +7,9 @@
 //
 //  Code generation for model "lkas".
 //
-//  Model version              : 1.3
+//  Model version              : 1.2
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 13:41:48 2024
+//  C++ source code generated on : Thu Jun  6 12:21:23 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -26,9 +26,6 @@
 #include "makeConstraintMatrix_Projective_D_D.h"
 #include "normPts_D_D.h"
 #include "QRE_double.h"
-#include "eml_find_7rUftLmJ.h"
-#include "mean_uQukM2rh.h"
-#include "maximum_4kJ3rROr.h"
 #include <array>
 
 void lkas::lkas_v4l2Capture_updateV4L2Settings
@@ -373,6 +370,52 @@ void lkas::lkas_Warp_stepImpl(vision_internal_blocks_Warp_lkas_T *b_this, const
   }
 }
 
+// Function for MATLAB Function: '<S3>/MATLAB Function1'
+void lkas::lkas_eml_find(const bool x[307200], int32_t i_data[], int32_t *i_size,
+  int32_t j_data[], int32_t *j_size)
+{
+  int32_t idx;
+  int32_t ii;
+  int32_t jj;
+  bool exitg1;
+  idx = 0;
+  ii = 1;
+  jj = 1;
+  exitg1 = false;
+  while ((!exitg1) && (jj <= 640)) {
+    bool guard1;
+    guard1 = false;
+    if (x[((jj - 1) * 480 + ii) - 1]) {
+      idx++;
+      i_data[idx - 1] = ii;
+      j_data[idx - 1] = jj;
+      if (idx >= 307200) {
+        exitg1 = true;
+      } else {
+        guard1 = true;
+      }
+    } else {
+      guard1 = true;
+    }
+
+    if (guard1) {
+      ii++;
+      if (ii > 480) {
+        ii = 1;
+        jj++;
+      }
+    }
+  }
+
+  if (idx < 1) {
+    *i_size = 0;
+    *j_size = 0;
+  } else {
+    *i_size = idx;
+    *j_size = idx;
+  }
+}
+
 void lkas::lkas_and(bool in1_data[], int32_t *in1_size, const bool in2_data[],
                     const int32_t *in2_size, const bool in3_data[], const
                     int32_t *in3_size)
@@ -421,6 +464,89 @@ void lkas::lkas_binary_expand_op_3(bool in1_data[], int32_t *in1_size, const
 
   // End of MATLAB Function: '<S3>/MATLAB Function1'
   // End of Outputs for SubSystem: '<Root>/Enabled Subsystem'
+}
+
+// Function for MATLAB Function: '<S3>/MATLAB Function1'
+double lkas::lkas_mean(const double x_data[], const int32_t *x_size)
+{
+  double b_y;
+  if (*x_size == 0) {
+    b_y = 0.0;
+  } else {
+    int32_t firstBlockLength;
+    int32_t lastBlockLength;
+    int32_t nblocks;
+    int32_t xblockoffset;
+    if (*x_size <= 1024) {
+      firstBlockLength = *x_size;
+      lastBlockLength = 0;
+      nblocks = 1;
+    } else {
+      firstBlockLength = 1024;
+      nblocks = static_cast<int32_t>(static_cast<uint32_t>(*x_size) >> 10);
+      lastBlockLength = *x_size - (nblocks << 10);
+      if (lastBlockLength > 0) {
+        nblocks++;
+      } else {
+        lastBlockLength = 1024;
+      }
+    }
+
+    b_y = x_data[0];
+    for (xblockoffset = 2; xblockoffset <= firstBlockLength; xblockoffset++) {
+      b_y += x_data[xblockoffset - 1];
+    }
+
+    for (firstBlockLength = 2; firstBlockLength <= nblocks; firstBlockLength++)
+    {
+      double bsum;
+      int32_t hi;
+      xblockoffset = (firstBlockLength - 1) << 10;
+      bsum = x_data[xblockoffset];
+      if (firstBlockLength == nblocks) {
+        hi = lastBlockLength;
+      } else {
+        hi = 1024;
+      }
+
+      for (int32_t b_k{2}; b_k <= hi; b_k++) {
+        bsum += x_data[(xblockoffset + b_k) - 1];
+      }
+
+      b_y += bsum;
+    }
+  }
+
+  return b_y / static_cast<double>(*x_size);
+}
+
+// Function for MATLAB Function: '<S3>/MATLAB Function1'
+double lkas::lkas_maximum(const double x_data[], const int32_t *x_size)
+{
+  double ex;
+  int32_t last;
+  last = *x_size;
+  if (*x_size <= 2) {
+    if (*x_size == 1) {
+      ex = x_data[0];
+    } else {
+      ex = x_data[*x_size - 1];
+      if (x_data[0] >= ex) {
+        ex = x_data[0];
+      }
+    }
+  } else {
+    ex = x_data[0];
+    for (int32_t k{2}; k <= last; k++) {
+      double x;
+      x = x_data[k - 1];
+      if (ex < x) {
+        ex = x;
+      }
+    }
+  }
+
+  return ex;
 }
 
 void lkas::lkas_binary_expand_op_2(bool in1_data[], int32_t *in1_size, const
@@ -581,18 +707,18 @@ void lkas::lkas_SystemCore_setup
 void lkas::lkas_SystemCore_setup_h
   (codertarget_raspi_internal_RaspiTCPReceive_lkas_T *obj)
 {
-  std::array<char, 10> ipaddr;
+  std::array<char, 14> ipaddr;
   double tmp;
   int16_t errorNo;
   uint16_t tmp_0;
   uint8_t isLittleEndian;
-  static const std::array<char, 10> ipaddr_0{ { '1', '2', '7', '.', '0', '.',
-      '0', '.', '1', '\x00' } };
+  static const std::array<char, 14> ipaddr_0{ { '1', '9', '2', '.', '1', '6',
+      '8', '.', '1', '.', '1', '5', '5', '\x00' } };
 
   // Start for MATLABSystem: '<Root>/TCP//IP Receive'
   obj->isInitialized = 1;
   obj->isServer_ = 0.0;
-  for (int32_t i{0}; i < 10; i++) {
+  for (int32_t i{0}; i < 14; i++) {
     ipaddr[i] = ipaddr_0[i];
   }
 
@@ -609,7 +735,7 @@ void lkas::lkas_SystemCore_setup_h
   }
 
   // Start for MATLABSystem: '<Root>/TCP//IP Receive'
-  TCPStreamSetup(25000, 0, &obj->connStream_, tmp_0, 0.0, &errorNo, &ipaddr[0]);
+  TCPStreamSetup(3332, 0, &obj->connStream_, tmp_0, 0.0, &errorNo, &ipaddr[0]);
   littleEndianCheck(&isLittleEndian);
 }
 
@@ -666,7 +792,7 @@ void lkas::step()
   int32_t jj_size;
 
   // MATLABSystem: '<Root>/TCP//IP Receive'
-  maxSum = std::round(lkas_DW.obj_l.isServer_);
+  maxSum = std::round(lkas_DW.obj_e.isServer_);
   if (maxSum < 65536.0) {
     if (maxSum >= 0.0) {
       tmp = static_cast<uint16_t>(maxSum);
@@ -677,7 +803,7 @@ void lkas::step()
     tmp = UINT16_MAX;
   }
 
-  TCPStreamStepRecv(&xtmp, &b_varargout_2, 1, lkas_DW.obj_l.connStream_,
+  TCPStreamStepRecv(&xtmp, &b_varargout_2, 1, lkas_DW.obj_e.connStream_,
                     &errorNo, tmp);
 
   // Outputs for Enabled SubSystem: '<Root>/Enabled Subsystem' incorporates:
@@ -718,23 +844,10 @@ void lkas::step()
       lkas_DW.obj.ManualFocus = 0.5;
     }
 
-    lkas_SystemCore_step(&lkas_DW.obj, &lkas_B.uv3[0], &lkas_B.uv[0],
-                         &lkas_B.uv1[0]);
+    lkas_SystemCore_step(&lkas_DW.obj, &lkas_B.uv[0], &lkas_B.uv1[0],
+                         &lkas_B.uv2[0]);
 
     // Math: '<S4>/Transpose' incorporates:
-    //   MATLABSystem: '<S1>/V4L2 Video Capture'
-
-    for (k = 0; k < 640; k++) {
-      for (bestInlierNum = 0; bestInlierNum < 480; bestInlierNum++) {
-        lkas_B.uv2[bestInlierNum + 480 * k] = lkas_B.uv3[640 * bestInlierNum + k];
-      }
-    }
-
-    std::memcpy(&lkas_B.outputImage[0], &lkas_B.uv2[0], 307200U * sizeof(uint8_t));
-
-    // End of Math: '<S4>/Transpose'
-
-    // Math: '<S4>/Transpose1' incorporates:
     //   MATLABSystem: '<S1>/V4L2 Video Capture'
 
     for (k = 0; k < 640; k++) {
@@ -743,7 +856,20 @@ void lkas::step()
       }
     }
 
-    std::memcpy(&lkas_B.outputImage[307200], &lkas_B.uv3[0], 307200U * sizeof
+    std::memcpy(&lkas_B.outputImage[0], &lkas_B.uv3[0], 307200U * sizeof(uint8_t));
+
+    // End of Math: '<S4>/Transpose'
+
+    // Math: '<S4>/Transpose1' incorporates:
+    //   MATLABSystem: '<S1>/V4L2 Video Capture'
+
+    for (k = 0; k < 640; k++) {
+      for (bestInlierNum = 0; bestInlierNum < 480; bestInlierNum++) {
+        lkas_B.uv[bestInlierNum + 480 * k] = lkas_B.uv1[640 * bestInlierNum + k];
+      }
+    }
+
+    std::memcpy(&lkas_B.outputImage[307200], &lkas_B.uv[0], 307200U * sizeof
                 (uint8_t));
 
     // End of Math: '<S4>/Transpose1'
@@ -753,11 +879,11 @@ void lkas::step()
 
     for (k = 0; k < 640; k++) {
       for (bestInlierNum = 0; bestInlierNum < 480; bestInlierNum++) {
-        lkas_B.uv3[bestInlierNum + 480 * k] = lkas_B.uv1[640 * bestInlierNum + k];
+        lkas_B.uv[bestInlierNum + 480 * k] = lkas_B.uv2[640 * bestInlierNum + k];
       }
     }
 
-    std::memcpy(&lkas_B.outputImage[614400], &lkas_B.uv3[0], 307200U * sizeof
+    std::memcpy(&lkas_B.outputImage[614400], &lkas_B.uv[0], 307200U * sizeof
                 (uint8_t));
 
     // End of Math: '<S4>/Transpose2'
@@ -1023,8 +1149,8 @@ void lkas::step()
     //   MATLABSystem: '<S5>/Warp'
 
     scale1 = 320.0;
-    eml_find_7rUftLmJ(&lkas_B.bv[0], lkas_B.ii_data_m, &ii_size,
-                      lkas_B.jj_data_c, &jj_size);
+    lkas_eml_find(&lkas_B.bv[0], lkas_B.ii_data_m, &ii_size, lkas_B.jj_data_c,
+                  &jj_size);
     c_size = ii_size;
     for (k = 0; k < ii_size; k++) {
       xtmp_tmp = lkas_B.ii_data_m[k];
@@ -1110,7 +1236,7 @@ void lkas::step()
         lkas_B.jj_data[k] = lkas_B.jj_data_c[lkas_B.tmp_data[k]];
       }
 
-      scale2 = mean_uQukM2rh(lkas_B.jj_data, &c_size);
+      scale2 = lkas_mean(lkas_B.jj_data, &c_size);
       if ((ii_size == jj_size) && ((ii_size == 1 ? jj_size : ii_size) == jj_size))
       {
         j = ii_size;
@@ -1144,7 +1270,7 @@ void lkas::step()
         lkas_B.ii_data[k] = lkas_B.ii_data_m[lkas_B.tmp_data_k[k]];
       }
 
-      maxSum = maximum_4kJ3rROr(lkas_B.ii_data, &c_size);
+      maxSum = lkas_maximum(lkas_B.ii_data, &c_size);
     } else {
       bestCol = 2;
       if ((ii_size == jj_size) && ((ii_size == 1 ? jj_size : ii_size) == jj_size))
@@ -1182,8 +1308,8 @@ void lkas::step()
         lkas_B.ii_data[k] = lkas_B.ii_data_m[lkas_B.tmp_data[k]];
       }
 
-      scale2 = mean_uQukM2rh(lkas_B.jj_data, &c_size);
-      maxSum = maximum_4kJ3rROr(lkas_B.ii_data, &c_size);
+      scale2 = lkas_mean(lkas_B.jj_data, &c_size);
+      maxSum = lkas_maximum(lkas_B.ii_data, &c_size);
     }
 
     for (bestInlierNum = 0; bestInlierNum < 20; bestInlierNum++) {
@@ -1264,7 +1390,7 @@ void lkas::step()
             lkas_B.jj_data[k] = lkas_B.jj_data_c[lkas_B.tmp_data_b[k]];
           }
 
-          scale2 = mean_uQukM2rh(lkas_B.jj_data, &c_size);
+          scale2 = lkas_mean(lkas_B.jj_data, &c_size);
         }
 
         if ((sum > 300.0) && (sum < 340.0)) {
@@ -1340,7 +1466,7 @@ void lkas::step()
             lkas_B.jj_data[k] = lkas_B.jj_data_c[lkas_B.tmp_data_c[k]];
           }
 
-          scale2 = mean_uQukM2rh(lkas_B.jj_data, &c_size);
+          scale2 = lkas_mean(lkas_B.jj_data, &c_size);
         }
 
         if ((sum > 300.0) && (sum < 340.0)) {
@@ -1350,6 +1476,9 @@ void lkas::step()
 
       lkas_B.error = 340.0 - scale1;
     }
+
+    // SignalConversion generated from: '<S1>/throttle'
+    lkas_B.OutportBufferForthrottle = lkas_ConstB.Constant;
   }
 
   // End of Outputs for SubSystem: '<Root>/Enabled Subsystem'
@@ -1357,6 +1486,10 @@ void lkas::step()
   // Send: '<Root>/Event Send'
   // Send event
   ProvidedPort->Distance_error.Send(lkas_B.error);
+
+  // Send: '<Root>/Event Send1'
+  // Send event
+  ProvidedPort->Throttle.Send(lkas_B.OutportBufferForthrottle);
 }
 
 // Model initialize function
@@ -1369,6 +1502,9 @@ void lkas::initialize()
     // SystemInitialize for Enabled SubSystem: '<Root>/Enabled Subsystem'
     // Start for S-Function (svipesttform): '<S5>/Estimate Geometric Transformation' 
     srand(clock());
+
+    // SystemInitialize for SignalConversion generated from: '<S1>/throttle'
+    lkas_B.OutportBufferForthrottle = lkas_ConstB.Constant;
 
     // Start for MATLABSystem: '<S1>/V4L2 Video Capture'
     lkas_DW.obj.matlabCodegenIsDeleted = true;
@@ -1393,7 +1529,7 @@ void lkas::initialize()
     // End of SystemInitialize for SubSystem: '<Root>/Enabled Subsystem'
 
     // Start for MATLABSystem: '<Root>/TCP//IP Receive'
-    lkas_SystemCore_setup_h(&lkas_DW.obj_l);
+    lkas_SystemCore_setup_h(&lkas_DW.obj_e);
 
     // Initialize service provider instance - ProvidedPort
     ProvidedPort = std::make_shared< skeleton::ProvidedInterfaceSkeleton >(ara::

@@ -454,6 +454,30 @@ lkas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lkas.dir/build.make CMakeFiles/lkas.dir/lkas.cpp.s
 .PHONY : lkas.cpp.s
 
+lkas_data.o: lkas_data.cpp.o
+.PHONY : lkas_data.o
+
+# target to build an object file
+lkas_data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lkas.dir/build.make CMakeFiles/lkas.dir/lkas_data.cpp.o
+.PHONY : lkas_data.cpp.o
+
+lkas_data.i: lkas_data.cpp.i
+.PHONY : lkas_data.i
+
+# target to preprocess a source file
+lkas_data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lkas.dir/build.make CMakeFiles/lkas.dir/lkas_data.cpp.i
+.PHONY : lkas_data.cpp.i
+
+lkas_data.s: lkas_data.cpp.s
+.PHONY : lkas_data.s
+
+# target to generate assembly for a file
+lkas_data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lkas.dir/build.make CMakeFiles/lkas.dir/lkas_data.cpp.s
+.PHONY : lkas_data.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -599,6 +623,9 @@ help:
 	@echo "... lkas.o"
 	@echo "... lkas.i"
 	@echo "... lkas.s"
+	@echo "... lkas_data.o"
+	@echo "... lkas_data.i"
+	@echo "... lkas_data.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

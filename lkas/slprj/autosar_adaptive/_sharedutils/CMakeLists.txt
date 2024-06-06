@@ -52,10 +52,7 @@ add_library(rtwshared STATIC ${START_DIR}/slprj/autosar_adaptive/_sharedutils/QR
     ${START_DIR}/slprj/autosar_adaptive/_sharedutils/QRSL1_double.cpp
     ${START_DIR}/slprj/autosar_adaptive/_sharedutils/QRV2Norm_double.cpp
     ${START_DIR}/slprj/autosar_adaptive/_sharedutils/makeConstraintMatrix_Projective_D_D.cpp
-    ${START_DIR}/slprj/autosar_adaptive/_sharedutils/normPts_D_D.cpp
-    ${START_DIR}/slprj/autosar_adaptive/_sharedutils/eml_find_7rUftLmJ.cpp
-    ${START_DIR}/slprj/autosar_adaptive/_sharedutils/maximum_4kJ3rROr.cpp
-    ${START_DIR}/slprj/autosar_adaptive/_sharedutils/mean_uQukM2rh.cpp)
+    ${START_DIR}/slprj/autosar_adaptive/_sharedutils/normPts_D_D.cpp)
 
 # Set properties for target "rtwshared".
 set_target_properties(rtwshared PROPERTIES PREFIX ""

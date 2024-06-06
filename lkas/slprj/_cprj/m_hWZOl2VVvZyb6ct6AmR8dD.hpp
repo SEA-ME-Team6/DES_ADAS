@@ -1,5 +1,5 @@
-#ifndef __bWZtXix408x4Us1rl4Tg2_h__
-#define __bWZtXix408x4Us1rl4Tg2_h__
+#ifndef __hWZOl2VVvZyb6ct6AmR8dD_h__
+#define __hWZOl2VVvZyb6ct6AmR8dD_h__
 
 /* Include files */
 #include "simstruc.h"
@@ -366,10 +366,10 @@ using s_HNEgOhGwwuu4IndkThqyM = tag_HNEgOhGwwuu4IndkThqyM;
 
 #endif                                 /* typedef_s_HNEgOhGwwuu4IndkThqyM */
 
-#ifndef typedef_InstanceStruct_bWZtXix408x4Us1rl4Tg2
-#define typedef_InstanceStruct_bWZtXix408x4Us1rl4Tg2
+#ifndef typedef_InstanceStruct_hWZOl2VVvZyb6ct6AmR8dD
+#define typedef_InstanceStruct_hWZOl2VVvZyb6ct6AmR8dD
 
-struct InstanceStruct_bWZtXix408x4Us1rl4Tg2
+struct InstanceStruct_hWZOl2VVvZyb6ct6AmR8dD
 {
   SimStruct *S;
   codertarget_raspi_internal_RaspiTCPReceive sysobj;
@@ -379,7 +379,7 @@ struct InstanceStruct_bWZtXix408x4Us1rl4Tg2
   int8_T *b_y1;
 };
 
-#endif                                 /* typedef_InstanceStruct_bWZtXix408x4Us1rl4Tg2 */
+#endif                                 /* typedef_InstanceStruct_hWZOl2VVvZyb6ct6AmR8dD */
 
 /* Named Constants */
 
@@ -390,7 +390,7 @@ struct InstanceStruct_bWZtXix408x4Us1rl4Tg2
 /* Function Declarations */
 
 /* Function Definitions */
-extern void method_dispatcher_bWZtXix408x4Us1rl4Tg2(SimStruct *S, int_T method,
+extern void method_dispatcher_hWZOl2VVvZyb6ct6AmR8dD(SimStruct *S, int_T method,
   void* data);
 
 #endif
