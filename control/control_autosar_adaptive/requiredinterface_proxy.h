@@ -48,11 +48,11 @@ namespace proxy
       uint16_t mEventId, mEventGroupId;
       uint32_t queueLength{ 1 };
 
-      mEventId = 5608;
-      mEventGroupId = 63603;
+      mEventId = 8645;
+      mEventGroupId = 18054;
       Aeb.Init(mEventId, mEventGroupId);
-      mEventId = 63083;
-      mEventGroupId = 63603;
+      mEventId = 12225;
+      mEventGroupId = 18054;
       Lkas.Init(mEventId, mEventGroupId);
     }
 

@@ -1,7 +1,7 @@
 import socket
 
 def main():
-    host = '192.168.1.125'  # IP address of local
+    host = '192.168.86.39'  # IP address of local
     port = 3332            # Port num which has to be same as LKAS port num
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

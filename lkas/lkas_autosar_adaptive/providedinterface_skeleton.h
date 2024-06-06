@@ -70,11 +70,11 @@ namespace skeleton
       // ara::com::ServiceFactory::CreateService(mHndl);
       uint16_t mEventId, mEventGroupId;
       uint16_t mMethodId;
-      mEventId = 65364;
-      mEventGroupId = 46570;
+      mEventId = 12225;
+      mEventGroupId = 18054;
       Distance_error.Init(mHndl, mEventId, mEventGroupId);
-      mEventId = 41622;
-      mEventGroupId = 46570;
+      mEventId = 8645;
+      mEventGroupId = 18054;
       Throttle.Init(mHndl, mEventId, mEventGroupId);
       return ara::core::Result<void>::FromValue();
     }
