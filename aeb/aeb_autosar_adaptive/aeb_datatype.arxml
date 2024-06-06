@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model aeb
-Model version                : 1.2
+Model version                : 1.1
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 21:02:46 2024
+XML source code generated on : Wed Jun 05 21:26:43 2024
 Model Checksum               : 3293457827 586643118 4887395 2912893866
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
@@ -14,7 +14,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                 <AR-PACKAGE>
                     <SHORT-NAME>StdTypes</SHORT-NAME>
                     <ELEMENTS>
-                        <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="27452f48-b193-54df-4bd0-4878492cc27e">
+                        <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="46828ee4-6c5f-5867-26f5-c17d1ef033d8">
                             <SHORT-NAME>double</SHORT-NAME>
                             <CATEGORY>VALUE</CATEGORY>
                         </STD-CPP-IMPLEMENTATION-DATA-TYPE>

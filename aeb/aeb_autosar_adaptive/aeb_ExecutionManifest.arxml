@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model aeb
-Model version                : 1.2
+Model version                : 1.1
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 21:02:46 2024
+XML source code generated on : Wed Jun 05 21:26:43 2024
 Model Checksum               : 3293457827 586643118 4887395 2912893866
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
@@ -15,23 +15,23 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                     <SHORT-NAME>ProcessStateMachine</SHORT-NAME>
                     <INITIAL-MODE-REF DEST="MODE-DECLARATION">/ModeDeclarationGroups/ProcessStateMachine/Idle</INITIAL-MODE-REF>
                     <MODE-DECLARATIONS>
-                        <MODE-DECLARATION UUID="e080b981-04b0-5b17-a8b0-8e3ec87f89ef">
+                        <MODE-DECLARATION UUID="e0d7bbd5-5222-54c4-b2a8-afc4c261981a">
                             <SHORT-NAME>Idle</SHORT-NAME>
                             <VALUE>1</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="52b0b9e7-de02-57e3-4a3b-fa624e36991f">
+                        <MODE-DECLARATION UUID="9477989f-ca57-5910-60f7-4091e759e514">
                             <SHORT-NAME>Starting</SHORT-NAME>
                             <VALUE>2</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="c61ef3a1-c943-5248-314c-4148e31b9044">
+                        <MODE-DECLARATION UUID="02c2fce8-bb7c-583f-56d4-a7e37ef57842">
                             <SHORT-NAME>Running</SHORT-NAME>
                             <VALUE>3</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="9d2d8eba-361c-53a9-8766-ae18a1b130e5">
+                        <MODE-DECLARATION UUID="50b100b5-ce34-5935-5da1-c83353a9c26a">
                             <SHORT-NAME>Terminating</SHORT-NAME>
                             <VALUE>4</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="56b03535-35e2-5ac4-2f1e-44c8f6e3dc4b">
+                        <MODE-DECLARATION UUID="19ca27fd-20cf-5bfc-e47d-268744090ff3">
                             <SHORT-NAME>Terminated</SHORT-NAME>
                             <VALUE>5</VALUE>
                         </MODE-DECLARATION>
@@ -42,10 +42,10 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_Executable</SHORT-NAME>
             <ELEMENTS>
-                <EXECUTABLE UUID="446935ef-4e61-5f5b-96d3-5804bd306e81">
+                <EXECUTABLE UUID="d18ba0bf-16c6-5b53-1484-89f06f61122a">
                     <SHORT-NAME>aeb</SHORT-NAME>
                     <BUILD-TYPE>BUILD-TYPE-DEBUG</BUILD-TYPE>
-                    <ROOT-SW-COMPONENT-PROTOTYPE UUID="34cca10a-5948-5b24-f422-6d10c7f9b69d">
+                    <ROOT-SW-COMPONENT-PROTOTYPE UUID="32a7225a-4a2c-5ff8-9277-6ec40014763d">
                         <SHORT-NAME>aeb_RootSwComponentPrototype</SHORT-NAME>
                         <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/Components/aeb</APPLICATION-TYPE-TREF>
                     </ROOT-SW-COMPONENT-PROTOTYPE>
@@ -55,10 +55,10 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_FunctionGroupSet</SHORT-NAME>
             <ELEMENTS>
-                <FUNCTION-GROUP-SET UUID="b1f907ce-d515-5ffa-8e96-0e99adf5c239">
+                <FUNCTION-GROUP-SET UUID="247c9120-f94f-544f-923d-5c5c2b62af88">
                     <SHORT-NAME>DefaultFunctionGroupSet</SHORT-NAME>
                     <FUNCTION-GROUPS>
-                        <MODE-DECLARATION-GROUP-PROTOTYPE UUID="e7e56d0d-59f4-50c5-0e53-a89cef61a53c">
+                        <MODE-DECLARATION-GROUP-PROTOTYPE UUID="56ae4f82-f804-5329-b01b-b968bc29692e">
                             <SHORT-NAME>MachineFG</SHORT-NAME>
                             <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
                             <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/MachineStates/MachineFG</TYPE-TREF>
@@ -70,7 +70,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_ProcessDesigns</SHORT-NAME>
             <ELEMENTS>
-                <PROCESS-DESIGN UUID="75e43ab5-5cc2-588d-dd56-c262995472fe">
+                <PROCESS-DESIGN UUID="b62b46cd-e2a0-5efe-1cdb-a9f7b6269ed2">
                     <SHORT-NAME>DefaultProcessDesign</SHORT-NAME>
                     <EXECUTABLE-REFS>
                         <EXECUTABLE-REF DEST="EXECUTABLE">/aeb_Executable/aeb</EXECUTABLE-REF>
@@ -81,10 +81,10 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_ProcessToMachineMappingSet</SHORT-NAME>
             <ELEMENTS>
-                <PROCESS-TO-MACHINE-MAPPING-SET UUID="a65a0ba0-6181-5b2c-36c9-71d808a0a243">
+                <PROCESS-TO-MACHINE-MAPPING-SET UUID="3e693d52-f218-56a6-b806-02cc29ea2902">
                     <SHORT-NAME>ProcessToMachineMappingSet</SHORT-NAME>
                     <PROCESS-TO-MACHINE-MAPPINGS>
-                        <PROCESS-TO-MACHINE-MAPPING UUID="e28ed06b-9556-5e1a-b564-0afa0c78207b">
+                        <PROCESS-TO-MACHINE-MAPPING UUID="9efcc649-0862-554a-e3e2-3c9c2646ca37">
                             <SHORT-NAME>DefaultMapping</SHORT-NAME>
                             <MACHINE-REF DEST="MACHINE">/Machines/Host</MACHINE-REF>
                             <PROCESS-REF DEST="PROCESS">/aeb_Processes/DefaultInstance</PROCESS-REF>
@@ -96,13 +96,13 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_Processes</SHORT-NAME>
             <ELEMENTS>
-                <PROCESS UUID="98ea50e0-0016-543b-9fa6-14f37ed20984">
+                <PROCESS UUID="f3714c43-1116-5a60-600d-a0797b65b63c">
                     <SHORT-NAME>DefaultInstance</SHORT-NAME>
                     <DESIGN-REF DEST="PROCESS-DESIGN">/aeb_ProcessDesigns/DefaultProcessDesign</DESIGN-REF>
                     <EXECUTABLE-REFS>
                         <EXECUTABLE-REF DEST="EXECUTABLE">/aeb_Executable/aeb</EXECUTABLE-REF>
                     </EXECUTABLE-REFS>
-                    <PROCESS-STATE-MACHINE UUID="448b97f1-0b0b-5dc1-e572-9b17698b43fd">
+                    <PROCESS-STATE-MACHINE UUID="6ac731f9-2416-5523-9731-acddf7950279">
                         <SHORT-NAME>ProcessStateMachine_ModeDeclarationGroupElement</SHORT-NAME>
                         <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
                         <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/ModeDeclarationGroups/ProcessStateMachine</TYPE-TREF>
@@ -125,7 +125,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_StartupConfigs</SHORT-NAME>
             <ELEMENTS>
-                <STARTUP-CONFIG UUID="83b83b0b-9ddb-57d8-195c-8b2d17326a00">
+                <STARTUP-CONFIG UUID="ffd01bda-8dd2-5c2b-461a-0e803887bfb6">
                     <SHORT-NAME>StartupConfigRR</SHORT-NAME>
                     <PROCESS-ARGUMENTS>
                         <PROCESS-ARGUMENT>
@@ -144,7 +144,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                     <SCHEDULING-POLICY>SCHEDULING-POLICY-ROUND-ROBIN</SCHEDULING-POLICY>
                     <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
                 </STARTUP-CONFIG>
-                <STARTUP-CONFIG UUID="0a4862ea-1f3c-547d-33cc-1816b842c8f5">
+                <STARTUP-CONFIG UUID="3758e254-b416-557f-bbe3-de30d348be16">
                     <SHORT-NAME>StartupConfigFifo</SHORT-NAME>
                     <PROCESS-ARGUMENTS>
                         <PROCESS-ARGUMENT>
@@ -163,7 +163,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                     <SCHEDULING-POLICY>SCHEDULING-POLICY-FIFO</SCHEDULING-POLICY>
                     <SCHEDULING-PRIORITY>32</SCHEDULING-PRIORITY>
                 </STARTUP-CONFIG>
-                <STARTUP-CONFIG UUID="61f8d45c-f93a-5094-354f-5fa40e641e8d">
+                <STARTUP-CONFIG UUID="3c9a65cf-f8f0-5d47-c91a-5c0e4b69cf7d">
                     <SHORT-NAME>StartupConfigOther</SHORT-NAME>
                     <PROCESS-ARGUMENTS>
                         <PROCESS-ARGUMENT>

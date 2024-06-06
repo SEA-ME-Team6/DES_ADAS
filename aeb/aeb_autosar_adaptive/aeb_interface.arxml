@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model aeb
-Model version                : 1.2
+Model version                : 1.1
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 21:02:46 2024
+XML source code generated on : Wed Jun 05 21:26:43 2024
 Model Checksum               : 3293457827 586643118 4887395 2912893866
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
@@ -11,10 +11,10 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>Interfaces</SHORT-NAME>
             <ELEMENTS>
-                <SERVICE-INTERFACE UUID="1b6f3796-78be-5b6b-9736-cfbf8793d46b">
+                <SERVICE-INTERFACE UUID="b52d72a5-41d9-55a6-e95f-d0a89d19973d">
                     <SHORT-NAME>ProvidedInterface</SHORT-NAME>
                     <EVENTS>
-                        <VARIABLE-DATA-PROTOTYPE UUID="aa466f5b-88a1-529b-5af6-de5e685c3705">
+                        <VARIABLE-DATA-PROTOTYPE UUID="6a9669d9-f858-5f43-3076-a05f83f594fe">
                             <SHORT-NAME>Brake</SHORT-NAME>
                             <CATEGORY>VALUE</CATEGORY>
                             <SW-DATA-DEF-PROPS>

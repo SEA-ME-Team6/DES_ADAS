@@ -68,8 +68,6 @@ endif()
 ## Required packages
 ###########################################################################
 find_package(Threads REQUIRED)
-find_package(Boost 1.55 COMPONENTS system thread log REQUIRED)
-find_package(vsomeip3 REQUIRED)
 
 ###########################################################################
 ## System Libraries
@@ -80,23 +78,10 @@ find_library(FOUND_LIBM m NO_SYSTEM_ENVIRONMENT_PATH PATHS ${CMAKE_C_IMPLICIT_LI
 ## Target definition and commands
 ###########################################################################
 
-file(GLOB ARA_COM_SOURCES "${CMAKE_SOURCE_DIR}/ara/com/*.cpp")
-file(GLOB ARA_COM_VSOMEIP_SOURCES "${CMAKE_SOURCE_DIR}/ara/com/vsomeip/*.cpp")
-file(GLOB ARA_CORE_SOURCES "${CMAKE_SOURCE_DIR}/ara/core/*.cpp")
-# file(GLOB ARA_DIAG_SOURCES "${CMAKE_SOURCE_DIR}/ara/diag/*.cpp")
-# file(GLOB ARA_EXEC_SOURCES "${CMAKE_SOURCE_DIR}/ara/exec/*.cpp")
-file(GLOB ARA_LOG_SOURCES "${CMAKE_SOURCE_DIR}/ara/log/*.cpp")
-
 # Definition of target "control".
 add_executable(control  /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
     ${START_DIR}/control_autosar_adaptive/control.cpp
-    ${START_DIR}/control_autosar_adaptive/main.cpp
-    ${ARA_COM_SOURCES}
-    ${ARA_COM_VSOMEIP_SOURCES}
-    ${ARA_CORE_SOURCES}
-    # ${ARA_DIAG_SOURCES}
-    # ${ARA_EXEC_SOURCES}
-    ${ARA_LOG_SOURCES})
+    ${START_DIR}/control_autosar_adaptive/main.cpp)
 
 # Set properties for target "control".
 set_target_properties(control PROPERTIES PREFIX ""
@@ -141,13 +126,16 @@ target_include_directories(control PRIVATE ${START_DIR}
     ${MATLAB_ROOT}/rtw/c/src/ext_mode/common
     ${MATLAB_ROOT}/rtw/c/ert
     ${START_DIR}/slprj/autosar_adaptive/_sharedutils
-    ${Boost_INCLUDE_DIR}
-    ${CMAKE_SOURCE_DIR}/ara/com
-    ${CMAKE_SOURCE_DIR}/ara/core
-    # ${CMAKE_SOURCE_DIR}/ara/diag
-    # ${CMAKE_SOURCE_DIR}/ara/exec
-    ${CMAKE_SOURCE_DIR}/ara/log
-    ${CMAKE_SOURCE_DIR}/slprj/autosar_adaptive/_sharedutils)
+    ${START_DIR}/control_autosar_adaptive/ara/core
+    ${START_DIR}/control_autosar_adaptive/ara/com
+    ${START_DIR}/control_autosar_adaptive/ara/com/./../core/.
+    ${START_DIR}/control_autosar_adaptive/ara/com/./../core
+    ${START_DIR}/control_autosar_adaptive/ara/com/.
+    ${START_DIR}/control_autosar_adaptive/ara/com/vsomeip
+    ${START_DIR}/control_autosar_adaptive/ara/core/.
+    ${START_DIR}/control_autosar_adaptive/ara/exec/.
+    ${START_DIR}/control_autosar_adaptive/ara/exec
+    ${START_DIR}/control_autosar_adaptive/ara/log)
 
 # Specify library link dependencies for target "control". CMake generator 
 # expressions are used to create a CMakeLists.txt file that supports 
@@ -157,10 +145,7 @@ target_link_libraries(control PRIVATE Threads::Threads
     $<$<BOOL:${WIN32}>:kernel32>
     $<$<BOOL:${WIN32}>:ws2_32>
     $<$<BOOL:${WIN32}>:mswsock>
-    $<$<BOOL:${WIN32}>:advapi32>
-    Threads::Threads
-    ${Boost_LIBRARIES}
-    vsomeip3)
+    $<$<BOOL:${WIN32}>:advapi32>)
 
 # Extract DWARF debug symbols into a separate file when building 
 # executable programs for Apple platforms.

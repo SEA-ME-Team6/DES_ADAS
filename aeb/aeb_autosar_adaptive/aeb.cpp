@@ -9,7 +9,7 @@
 //
 //  Model version              : 1.1
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 21:01:22 2024
+//  C++ source code generated on : Wed Jun  5 21:26:40 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -127,7 +127,7 @@ void aeb::initialize()
 
   // Initialize service provider instance - ProvidedPort
   ProvidedPort = std::make_shared< skeleton::ProvidedInterfaceSkeleton >(ara::
-    com::InstanceIdentifier(ara::core::StringView("1")), ara::com::
+    com::InstanceIdentifier(std::string("1")), ara::com::
     MethodCallProcessingMode::kEventSingleThread);
   ProvidedPort->OfferService();
 }
