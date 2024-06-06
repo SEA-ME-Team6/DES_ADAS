@@ -5,7 +5,7 @@
 
    Code generated for Simulink Adaptive model: "control"
    AUTOSAR AP Release: "22-11"
-   On: "Wed Jun 05 20:40:57 2024"  */
+   On: "Thu Jun 06 12:57:54 2024"  */
 
 #ifndef REQUIREDINTERFACE_PROXY_H_
 #define REQUIREDINTERFACE_PROXY_H_
@@ -51,8 +51,8 @@ namespace proxy
       mEventId = 5608;
       mEventGroupId = 63603;
       Aeb.Init(mEventId, mEventGroupId);
-      mEventId = 65364;
-      mEventGroupId = 65364;
+      mEventId = 63083;
+      mEventGroupId = 63603;
       Lkas.Init(mEventId, mEventGroupId);
     }
 

@@ -9,7 +9,7 @@
 //
 //  Model version              : 1.2
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 20:40:55 2024
+//  C++ source code generated on : Thu Jun  6 12:57:52 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -105,7 +105,7 @@ void control::RequiredPortLkasReceive(ara::com::SamplePtr< proxy::events::Lkas::
 {
   // Receive: '<Root>/Event Receive'
   control_B.EventReceive = *elementPtr;
-  std::cout << "lkas send: " << control_B.EventReceive << std::endl;
+  std::cout << "LKas send messages: " << control_B.EventReceive << std::endl;
 }
 
 void control::RequiredPortAebReceive(ara::com::SamplePtr< proxy::events::Aeb::
@@ -113,7 +113,7 @@ void control::RequiredPortAebReceive(ara::com::SamplePtr< proxy::events::Aeb::
 {
   // Receive: '<Root>/Event Receive1'
   control_B.EventReceive1 = *elementPtr;
-  std::cout << "aeb send: " << control_B.EventReceive1 << std::endl;
+  std::cout << "AEB send messages: " << control_B.EventReceive1 << std::endl;
 
 }
 
