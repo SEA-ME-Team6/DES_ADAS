@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ultrasonic
+# Target rules for targets named aeb
 
 # Build rule for target.
-ultrasonic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ultrasonic
-.PHONY : ultrasonic
+aeb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aeb
+.PHONY : aeb
 
 # fast build rule for target.
-ultrasonic/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/build
-.PHONY : ultrasonic/fast
+aeb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/build
+.PHONY : aeb/fast
 
 #=============================================================================
 # Target rules for targets named rtwshared
@@ -147,7 +147,7 @@ aeb.o: aeb.cpp.o
 
 # target to build an object file
 aeb.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/aeb.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/aeb.cpp.o
 .PHONY : aeb.cpp.o
 
 aeb.i: aeb.cpp.i
@@ -155,7 +155,7 @@ aeb.i: aeb.cpp.i
 
 # target to preprocess a source file
 aeb.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/aeb.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/aeb.cpp.i
 .PHONY : aeb.cpp.i
 
 aeb.s: aeb.cpp.s
@@ -163,15 +163,39 @@ aeb.s: aeb.cpp.s
 
 # target to generate assembly for a file
 aeb.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/aeb.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/aeb.cpp.s
 .PHONY : aeb.cpp.s
+
+aeb_data.o: aeb_data.cpp.o
+.PHONY : aeb_data.o
+
+# target to build an object file
+aeb_data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/aeb_data.cpp.o
+.PHONY : aeb_data.cpp.o
+
+aeb_data.i: aeb_data.cpp.i
+.PHONY : aeb_data.i
+
+# target to preprocess a source file
+aeb_data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/aeb_data.cpp.i
+.PHONY : aeb_data.cpp.i
+
+aeb_data.s: aeb_data.cpp.s
+.PHONY : aeb_data.s
+
+# target to generate assembly for a file
+aeb_data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/aeb_data.cpp.s
+.PHONY : aeb_data.cpp.s
 
 ara/com/instance_identifier.o: ara/com/instance_identifier.cpp.o
 .PHONY : ara/com/instance_identifier.o
 
 # target to build an object file
 ara/com/instance_identifier.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/instance_identifier.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/instance_identifier.cpp.o
 .PHONY : ara/com/instance_identifier.cpp.o
 
 ara/com/instance_identifier.i: ara/com/instance_identifier.cpp.i
@@ -179,7 +203,7 @@ ara/com/instance_identifier.i: ara/com/instance_identifier.cpp.i
 
 # target to preprocess a source file
 ara/com/instance_identifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/instance_identifier.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/instance_identifier.cpp.i
 .PHONY : ara/com/instance_identifier.cpp.i
 
 ara/com/instance_identifier.s: ara/com/instance_identifier.cpp.s
@@ -187,7 +211,7 @@ ara/com/instance_identifier.s: ara/com/instance_identifier.cpp.s
 
 # target to generate assembly for a file
 ara/com/instance_identifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/instance_identifier.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/instance_identifier.cpp.s
 .PHONY : ara/com/instance_identifier.cpp.s
 
 ara/com/resolve_instance.o: ara/com/resolve_instance.cpp.o
@@ -195,7 +219,7 @@ ara/com/resolve_instance.o: ara/com/resolve_instance.cpp.o
 
 # target to build an object file
 ara/com/resolve_instance.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/resolve_instance.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/resolve_instance.cpp.o
 .PHONY : ara/com/resolve_instance.cpp.o
 
 ara/com/resolve_instance.i: ara/com/resolve_instance.cpp.i
@@ -203,7 +227,7 @@ ara/com/resolve_instance.i: ara/com/resolve_instance.cpp.i
 
 # target to preprocess a source file
 ara/com/resolve_instance.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/resolve_instance.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/resolve_instance.cpp.i
 .PHONY : ara/com/resolve_instance.cpp.i
 
 ara/com/resolve_instance.s: ara/com/resolve_instance.cpp.s
@@ -211,7 +235,7 @@ ara/com/resolve_instance.s: ara/com/resolve_instance.cpp.s
 
 # target to generate assembly for a file
 ara/com/resolve_instance.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/resolve_instance.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/resolve_instance.cpp.s
 .PHONY : ara/com/resolve_instance.cpp.s
 
 ara/com/service_factory.o: ara/com/service_factory.cpp.o
@@ -219,7 +243,7 @@ ara/com/service_factory.o: ara/com/service_factory.cpp.o
 
 # target to build an object file
 ara/com/service_factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/service_factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/service_factory.cpp.o
 .PHONY : ara/com/service_factory.cpp.o
 
 ara/com/service_factory.i: ara/com/service_factory.cpp.i
@@ -227,7 +251,7 @@ ara/com/service_factory.i: ara/com/service_factory.cpp.i
 
 # target to preprocess a source file
 ara/com/service_factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/service_factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/service_factory.cpp.i
 .PHONY : ara/com/service_factory.cpp.i
 
 ara/com/service_factory.s: ara/com/service_factory.cpp.s
@@ -235,7 +259,7 @@ ara/com/service_factory.s: ara/com/service_factory.cpp.s
 
 # target to generate assembly for a file
 ara/com/service_factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/service_factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/service_factory.cpp.s
 .PHONY : ara/com/service_factory.cpp.s
 
 ara/com/vsomeip/vsomeip_client.o: ara/com/vsomeip/vsomeip_client.cpp.o
@@ -243,7 +267,7 @@ ara/com/vsomeip/vsomeip_client.o: ara/com/vsomeip/vsomeip_client.cpp.o
 
 # target to build an object file
 ara/com/vsomeip/vsomeip_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/vsomeip/vsomeip_client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/vsomeip/vsomeip_client.cpp.o
 .PHONY : ara/com/vsomeip/vsomeip_client.cpp.o
 
 ara/com/vsomeip/vsomeip_client.i: ara/com/vsomeip/vsomeip_client.cpp.i
@@ -251,7 +275,7 @@ ara/com/vsomeip/vsomeip_client.i: ara/com/vsomeip/vsomeip_client.cpp.i
 
 # target to preprocess a source file
 ara/com/vsomeip/vsomeip_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/vsomeip/vsomeip_client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/vsomeip/vsomeip_client.cpp.i
 .PHONY : ara/com/vsomeip/vsomeip_client.cpp.i
 
 ara/com/vsomeip/vsomeip_client.s: ara/com/vsomeip/vsomeip_client.cpp.s
@@ -259,7 +283,7 @@ ara/com/vsomeip/vsomeip_client.s: ara/com/vsomeip/vsomeip_client.cpp.s
 
 # target to generate assembly for a file
 ara/com/vsomeip/vsomeip_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/vsomeip/vsomeip_client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/vsomeip/vsomeip_client.cpp.s
 .PHONY : ara/com/vsomeip/vsomeip_client.cpp.s
 
 ara/com/vsomeip/vsomeip_server.o: ara/com/vsomeip/vsomeip_server.cpp.o
@@ -267,7 +291,7 @@ ara/com/vsomeip/vsomeip_server.o: ara/com/vsomeip/vsomeip_server.cpp.o
 
 # target to build an object file
 ara/com/vsomeip/vsomeip_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/vsomeip/vsomeip_server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/vsomeip/vsomeip_server.cpp.o
 .PHONY : ara/com/vsomeip/vsomeip_server.cpp.o
 
 ara/com/vsomeip/vsomeip_server.i: ara/com/vsomeip/vsomeip_server.cpp.i
@@ -275,7 +299,7 @@ ara/com/vsomeip/vsomeip_server.i: ara/com/vsomeip/vsomeip_server.cpp.i
 
 # target to preprocess a source file
 ara/com/vsomeip/vsomeip_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/vsomeip/vsomeip_server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/vsomeip/vsomeip_server.cpp.i
 .PHONY : ara/com/vsomeip/vsomeip_server.cpp.i
 
 ara/com/vsomeip/vsomeip_server.s: ara/com/vsomeip/vsomeip_server.cpp.s
@@ -283,7 +307,7 @@ ara/com/vsomeip/vsomeip_server.s: ara/com/vsomeip/vsomeip_server.cpp.s
 
 # target to generate assembly for a file
 ara/com/vsomeip/vsomeip_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/com/vsomeip/vsomeip_server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/com/vsomeip/vsomeip_server.cpp.s
 .PHONY : ara/com/vsomeip/vsomeip_server.cpp.s
 
 ara/core/error_code.o: ara/core/error_code.cpp.o
@@ -291,7 +315,7 @@ ara/core/error_code.o: ara/core/error_code.cpp.o
 
 # target to build an object file
 ara/core/error_code.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/core/error_code.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/core/error_code.cpp.o
 .PHONY : ara/core/error_code.cpp.o
 
 ara/core/error_code.i: ara/core/error_code.cpp.i
@@ -299,7 +323,7 @@ ara/core/error_code.i: ara/core/error_code.cpp.i
 
 # target to preprocess a source file
 ara/core/error_code.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/core/error_code.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/core/error_code.cpp.i
 .PHONY : ara/core/error_code.cpp.i
 
 ara/core/error_code.s: ara/core/error_code.cpp.s
@@ -307,7 +331,7 @@ ara/core/error_code.s: ara/core/error_code.cpp.s
 
 # target to generate assembly for a file
 ara/core/error_code.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/core/error_code.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/core/error_code.cpp.s
 .PHONY : ara/core/error_code.cpp.s
 
 ara/core/instance_specifier.o: ara/core/instance_specifier.cpp.o
@@ -315,7 +339,7 @@ ara/core/instance_specifier.o: ara/core/instance_specifier.cpp.o
 
 # target to build an object file
 ara/core/instance_specifier.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/core/instance_specifier.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/core/instance_specifier.cpp.o
 .PHONY : ara/core/instance_specifier.cpp.o
 
 ara/core/instance_specifier.i: ara/core/instance_specifier.cpp.i
@@ -323,7 +347,7 @@ ara/core/instance_specifier.i: ara/core/instance_specifier.cpp.i
 
 # target to preprocess a source file
 ara/core/instance_specifier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/core/instance_specifier.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/core/instance_specifier.cpp.i
 .PHONY : ara/core/instance_specifier.cpp.i
 
 ara/core/instance_specifier.s: ara/core/instance_specifier.cpp.s
@@ -331,7 +355,7 @@ ara/core/instance_specifier.s: ara/core/instance_specifier.cpp.s
 
 # target to generate assembly for a file
 ara/core/instance_specifier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/core/instance_specifier.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/core/instance_specifier.cpp.s
 .PHONY : ara/core/instance_specifier.cpp.s
 
 ara/log/log_stream.o: ara/log/log_stream.cpp.o
@@ -339,7 +363,7 @@ ara/log/log_stream.o: ara/log/log_stream.cpp.o
 
 # target to build an object file
 ara/log/log_stream.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/log/log_stream.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/log/log_stream.cpp.o
 .PHONY : ara/log/log_stream.cpp.o
 
 ara/log/log_stream.i: ara/log/log_stream.cpp.i
@@ -347,7 +371,7 @@ ara/log/log_stream.i: ara/log/log_stream.cpp.i
 
 # target to preprocess a source file
 ara/log/log_stream.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/log/log_stream.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/log/log_stream.cpp.i
 .PHONY : ara/log/log_stream.cpp.i
 
 ara/log/log_stream.s: ara/log/log_stream.cpp.s
@@ -355,7 +379,7 @@ ara/log/log_stream.s: ara/log/log_stream.cpp.s
 
 # target to generate assembly for a file
 ara/log/log_stream.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/log/log_stream.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/log/log_stream.cpp.s
 .PHONY : ara/log/log_stream.cpp.s
 
 ara/log/logger.o: ara/log/logger.cpp.o
@@ -363,7 +387,7 @@ ara/log/logger.o: ara/log/logger.cpp.o
 
 # target to build an object file
 ara/log/logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/log/logger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/log/logger.cpp.o
 .PHONY : ara/log/logger.cpp.o
 
 ara/log/logger.i: ara/log/logger.cpp.i
@@ -371,7 +395,7 @@ ara/log/logger.i: ara/log/logger.cpp.i
 
 # target to preprocess a source file
 ara/log/logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/log/logger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/log/logger.cpp.i
 .PHONY : ara/log/logger.cpp.i
 
 ara/log/logger.s: ara/log/logger.cpp.s
@@ -379,7 +403,7 @@ ara/log/logger.s: ara/log/logger.cpp.s
 
 # target to generate assembly for a file
 ara/log/logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/ara/log/logger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/ara/log/logger.cpp.s
 .PHONY : ara/log/logger.cpp.s
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.o: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.o
@@ -387,7 +411,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/lin
 
 # target to build an object file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.o
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.o
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.i: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.i
@@ -395,7 +419,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/lin
 
 # target to preprocess a source file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.i
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.i
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.s: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.s
@@ -403,7 +427,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/lin
 
 # target to generate assembly for a file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.s
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_gpio.c.s
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.o: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.o
@@ -411,7 +435,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/ras
 
 # target to build an object file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.o
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.o
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.i: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.i
@@ -419,7 +443,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/ras
 
 # target to preprocess a source file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.i
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.i
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.s: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.s
@@ -427,7 +451,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/ras
 
 # target to generate assembly for a file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.s
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/linuxtimelogger/linuxTimeLogger.c.s
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.o: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.o
@@ -435,7 +459,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/ras
 
 # target to build an object file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.o
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.o
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.i: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.i
@@ -443,7 +467,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/ras
 
 # target to preprocess a source file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.i
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.i
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.s: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.s
@@ -451,7 +475,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/ras
 
 # target to generate assembly for a file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.s
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/src/pulsein/MW_Raspi_PulseIn.c.s
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.o: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o
@@ -459,7 +483,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackag
 
 # target to build an object file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.i: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i
@@ -467,7 +491,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackag
 
 # target to preprocess a source file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i
 
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.s: home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s
@@ -475,7 +499,7 @@ home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackag
 
 # target to generate assembly for a file
 home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s
 .PHONY : home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s
 
 main.o: main.cpp.o
@@ -483,7 +507,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -491,7 +515,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -499,7 +523,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ultrasonic.dir/build.make CMakeFiles/ultrasonic.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aeb.dir/build.make CMakeFiles/aeb.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -510,11 +534,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... aeb"
 	@echo "... rtwshared"
-	@echo "... ultrasonic"
 	@echo "... aeb.o"
 	@echo "... aeb.i"
 	@echo "... aeb.s"
+	@echo "... aeb_data.o"
+	@echo "... aeb_data.i"
+	@echo "... aeb_data.s"
 	@echo "... ara/com/instance_identifier.o"
 	@echo "... ara/com/instance_identifier.i"
 	@echo "... ara/com/instance_identifier.s"

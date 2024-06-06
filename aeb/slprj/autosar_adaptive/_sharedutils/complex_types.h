@@ -7,23 +7,11 @@
 //
 //  Code generation for model "lkas".
 //
-//  Model version              : 1.3
+//  Model version              : 1.2
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 13:41:48 2024
+//  C++ source code generated on : Thu Jun  6 12:21:23 2024
 
 
-//
-//  complex_types.h
-//
-//  Academic License - for use in teaching, academic research, and meeting
-//  course requirements at degree granting institutions only.  Not for
-//  government, commercial, or other organizational use.
-//
-//  Code generation for model "lkas".
-//
-//  Model version              : 1.3
-//  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 13:40:25 2024
 #ifndef COMPLEX_TYPES_H
 #define COMPLEX_TYPES_H
 #include <stdint.h>

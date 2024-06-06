@@ -7,9 +7,9 @@
 //
 //  Code generation for model "aeb".
 //
-//  Model version              : 1.1
+//  Model version              : 1.3
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 21:26:40 2024
+//  C++ source code generated on : Thu Jun  6 12:32:57 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -69,7 +69,7 @@ void aeb::step()
   uint8_t b_varargout_1;
 
   // MATLABSystem: '<Root>/TCP//IP Receive'
-  tmp = std::round(aeb_DW.obj_i.isServer_);
+  tmp = std::round(aeb_DW.obj_j.isServer_);
   if (tmp < 65536.0) {
     if (tmp >= 0.0) {
       tmp_0 = static_cast<uint16_t>(tmp);
@@ -80,7 +80,7 @@ void aeb::step()
     tmp_0 = UINT16_MAX;
   }
 
-  TCPStreamStepRecv(&b_varargout_1, &b_varargout_2, 1, aeb_DW.obj_i.connStream_,
+  TCPStreamStepRecv(&b_varargout_1, &b_varargout_2, 1, aeb_DW.obj_j.connStream_,
                     &errorNo, tmp_0);
 
   // Outputs for Enabled SubSystem: '<Root>/Enabled Subsystem' incorporates:
@@ -99,6 +99,9 @@ void aeb::step()
     //   MATLABSystem: '<S1>/Ultrasonic Sensor'
     //
     aeb_B.brake_command = (static_cast<double>(duration) * 0.000343 / 2.0 < 0.12);
+
+    // SignalConversion generated from: '<S1>/steering'
+    aeb_B.OutportBufferForsteering = aeb_ConstB.steer;
   }
 
   // End of Outputs for SubSystem: '<Root>/Enabled Subsystem'
@@ -106,12 +109,19 @@ void aeb::step()
   // Send: '<Root>/Event Send'
   // Send event
   ProvidedPort->Brake.Send(aeb_B.brake_command);
+
+  // Send: '<Root>/Event Send1'
+  // Send event
+  ProvidedPort->Steering.Send(aeb_B.OutportBufferForsteering);
 }
 
 // Model initialize function
 void aeb::initialize()
 {
   // SystemInitialize for Enabled SubSystem: '<Root>/Enabled Subsystem'
+  // SystemInitialize for SignalConversion generated from: '<S1>/steering'
+  aeb_B.OutportBufferForsteering = aeb_ConstB.steer;
+
   // Start for MATLABSystem: '<S1>/Ultrasonic Sensor'
   aeb_DW.obj.matlabCodegenIsDeleted = false;
   aeb_DW.obj.SampleTime = -1.0;
@@ -123,7 +133,7 @@ void aeb::initialize()
   // End of SystemInitialize for SubSystem: '<Root>/Enabled Subsystem'
 
   // Start for MATLABSystem: '<Root>/TCP//IP Receive'
-  aeb_SystemCore_setup(&aeb_DW.obj_i);
+  aeb_SystemCore_setup(&aeb_DW.obj_j);
 
   // Initialize service provider instance - ProvidedPort
   ProvidedPort = std::make_shared< skeleton::ProvidedInterfaceSkeleton >(ara::

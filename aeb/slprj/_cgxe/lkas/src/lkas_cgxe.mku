@@ -8,7 +8,7 @@ LD = $(CC)
  
 MODEL  = lkas
 TARGET = cgxe
-MODULE_SRCS 	= m_bWZtXix408x4Us1rl4Tg2.cpp
+MODULE_SRCS 	= m_hWZOl2VVvZyb6ct6AmR8dD.cpp
 MODEL_SRC	= lkas_cgxe.cpp
 MODEL_REG    = lkas_cgxe_registry.cpp
 MAKEFILE    = lkas_cgxe.mku
@@ -18,13 +18,13 @@ BUILDARGS   =
  
 
  
-USER_INCLUDES = -I"/home/dahyun/DES_ADAS" -I"/home/dahyun/DES_ADAS/slprj/_cprj" 
+USER_INCLUDES = -I"/home/dahyun/DES_ADAS/lkas" -I"/home/dahyun/DES_ADAS/lkas/slprj/_cprj" 
 MLSL_INCLUDES     = \
     -I"/usr/local/MATLAB/R2024a/extern/include" \
     -I"/usr/local/MATLAB/R2024a/simulink/include" \
     -I"/usr/local/MATLAB/R2024a/rtw/c/src"
 
-THIRD_PARTY_INCLUDES = -I"/home/dahyun/DES_ADAS/slprj/_cgxe/lkas/src" 
+THIRD_PARTY_INCLUDES = -I"/home/dahyun/DES_ADAS/lkas/slprj/_cgxe/lkas/src" 
 
 INCLUDE_PATH = $(MLSL_INCLUDES) $(USER_INCLUDES) $(THIRD_PARTY_INCLUDES)
  

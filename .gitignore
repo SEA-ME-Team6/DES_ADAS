@@ -1,4 +1,4 @@
-lkas_autosar_adaptive/build
-control_autosar_adaptive/build
+lkas/lkas_autosar_adaptive/build
+control/control_autosar_adaptive/build
+aeb/aeb_autosar_adaptive/build
 .vscode/
-

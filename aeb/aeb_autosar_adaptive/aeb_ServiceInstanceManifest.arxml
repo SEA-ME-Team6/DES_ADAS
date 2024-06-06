@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model aeb
-Model version                : 1.1
+Model version                : 1.3
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 21:26:43 2024
-Model Checksum               : 3293457827 586643118 4887395 2912893866
+XML source code generated on : Thu Jun 06 12:33:01 2024
+Model Checksum               : 383559113 515998471 1606582208 2063248873
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>aeb_CommunicationCluster</SHORT-NAME>
             <ELEMENTS>
-                <ETHERNET-CLUSTER UUID="20e0bbae-83a3-5183-e362-9a2e0d479f4e">
+                <ETHERNET-CLUSTER UUID="6e31f777-3ab8-5e82-e782-574f8fcc399a">
                     <SHORT-NAME>ComCluster</SHORT-NAME>
                     <ETHERNET-CLUSTER-VARIANTS>
                         <ETHERNET-CLUSTER-CONDITIONAL>
                             <PHYSICAL-CHANNELS>
-                                <ETHERNET-PHYSICAL-CHANNEL UUID="da28af51-a40d-582f-c666-5fe1576844c4">
+                                <ETHERNET-PHYSICAL-CHANNEL UUID="c4ed4093-6ded-5581-1ed3-3c177144d242">
                                     <SHORT-NAME>PhysicalChannel</SHORT-NAME>
                                     <NETWORK-ENDPOINTS>
-                                        <NETWORK-ENDPOINT UUID="e87b8027-2ff9-5bec-b85d-62db62e78180">
+                                        <NETWORK-ENDPOINT UUID="2157e319-c2f9-52b8-7d7a-116face2951d">
                                             <SHORT-NAME>NetworkEndpoint</SHORT-NAME>
                                             <NETWORK-ENDPOINT-ADDRESSES>
                                                 <IPV-4-CONFIGURATION>
@@ -38,13 +38,21 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_Deployments</SHORT-NAME>
             <ELEMENTS>
-                <DDS-SERVICE-INTERFACE-DEPLOYMENT UUID="cd5f8290-5844-55d4-ae3c-93bccd19bc55">
+                <DDS-SERVICE-INTERFACE-DEPLOYMENT UUID="bc33e933-0412-5b58-e171-9656188edab0">
                     <SHORT-NAME>DdsDeployment_ProvidedPort</SHORT-NAME>
                     <EVENT-DEPLOYMENTS>
-                        <DDS-EVENT-DEPLOYMENT UUID="83df66c9-3369-563e-3ea9-ebf195147c62">
+                        <DDS-EVENT-DEPLOYMENT UUID="41fd1f99-89e8-579f-6154-ef51793302bf">
                             <SHORT-NAME>Deployment_Brake</SHORT-NAME>
                             <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Brake</EVENT-REF>
                             <TOPIC-NAME>Brake</TOPIC-NAME>
+                            <TRANSPORT-PROTOCOLS>
+                                <TRANSPORT-PROTOCOL>TCP</TRANSPORT-PROTOCOL>
+                            </TRANSPORT-PROTOCOLS>
+                        </DDS-EVENT-DEPLOYMENT>
+                        <DDS-EVENT-DEPLOYMENT UUID="5e77154c-d372-5e6b-a625-787828b32370">
+                            <SHORT-NAME>Deployment_Steering</SHORT-NAME>
+                            <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Steering</EVENT-REF>
+                            <TOPIC-NAME>Steering</TOPIC-NAME>
                             <TRANSPORT-PROTOCOLS>
                                 <TRANSPORT-PROTOCOL>TCP</TRANSPORT-PROTOCOL>
                             </TRANSPORT-PROTOCOLS>
@@ -54,21 +62,27 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                         <TRANSPORT-PROTOCOL>TCP</TRANSPORT-PROTOCOL>
                     </TRANSPORT-PROTOCOLS>
                 </DDS-SERVICE-INTERFACE-DEPLOYMENT>
-                <SOMEIP-SERVICE-INTERFACE-DEPLOYMENT UUID="5d13654f-7373-5236-8c87-317aad715a75">
+                <SOMEIP-SERVICE-INTERFACE-DEPLOYMENT UUID="4c8bae24-010d-5181-0b1b-7e8dc2549321">
                     <SHORT-NAME>SomeipDeployment_ProvidedPort</SHORT-NAME>
                     <EVENT-DEPLOYMENTS>
-                        <SOMEIP-EVENT-DEPLOYMENT UUID="dc61cab6-23b1-5bf0-1ee0-23d3fd68a1e5">
+                        <SOMEIP-EVENT-DEPLOYMENT UUID="02aaf3c0-4348-5dac-fbef-92fabdc38381">
                             <SHORT-NAME>Deployment_Brake</SHORT-NAME>
                             <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Brake</EVENT-REF>
                             <EVENT-ID>8645</EVENT-ID>
                         </SOMEIP-EVENT-DEPLOYMENT>
+                        <SOMEIP-EVENT-DEPLOYMENT UUID="35581235-1bfb-55f7-9bcf-11514a73531f">
+                            <SHORT-NAME>Deployment_Steering</SHORT-NAME>
+                            <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/ProvidedInterface/Steering</EVENT-REF>
+                            <EVENT-ID>12225</EVENT-ID>
+                        </SOMEIP-EVENT-DEPLOYMENT>
                     </EVENT-DEPLOYMENTS>
                     <EVENT-GROUPS>
-                        <SOMEIP-EVENT-GROUP UUID="f432d22f-ab0e-5b8d-97b0-7df2d5f7593e">
+                        <SOMEIP-EVENT-GROUP UUID="dba6baa7-bc79-592b-4f80-7d66ee750353">
                             <SHORT-NAME>EventGroup_ProvidedPort</SHORT-NAME>
-                            <EVENT-GROUP-ID>8645</EVENT-GROUP-ID>
+                            <EVENT-GROUP-ID>18054</EVENT-GROUP-ID>
                             <EVENT-REFS>
                                 <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/aeb_Deployments/SomeipDeployment_ProvidedPort/Deployment_Brake</EVENT-REF>
+                                <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/aeb_Deployments/SomeipDeployment_ProvidedPort/Deployment_Steering</EVENT-REF>
                             </EVENT-REFS>
                         </SOMEIP-EVENT-GROUP>
                     </EVENT-GROUPS>
@@ -78,10 +92,10 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_MachineDesign</SHORT-NAME>
             <ELEMENTS>
-                <MACHINE-DESIGN UUID="e17b6af5-160f-503d-5929-21dbc4062490">
+                <MACHINE-DESIGN UUID="c4d4695a-19e2-5bad-4c49-e715144c1de3">
                     <SHORT-NAME>MachineDesign</SHORT-NAME>
                     <COMMUNICATION-CONNECTORS>
-                        <ETHERNET-COMMUNICATION-CONNECTOR UUID="a5d08a63-4d67-5e1d-9244-be2e854bb846">
+                        <ETHERNET-COMMUNICATION-CONNECTOR UUID="4e970626-148f-50fd-8049-57d6b15c9757">
                             <SHORT-NAME>CommunicationConnector</SHORT-NAME>
                             <UNICAST-NETWORK-ENDPOINT-REFS>
                                 <UNICAST-NETWORK-ENDPOINT-REF DEST="NETWORK-ENDPOINT">/aeb_CommunicationCluster/ComCluster/PhysicalChannel/NetworkEndpoint</UNICAST-NETWORK-ENDPOINT-REF>
@@ -94,21 +108,21 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_ServiceInstToMachineMap</SHORT-NAME>
             <ELEMENTS>
-                <DDS-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="bbba222f-f807-5f2c-28c2-483a0a0f44c6">
+                <DDS-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="b1fb3e99-efaa-5157-6ae7-2efeb15f94be">
                     <SHORT-NAME>DdsServiceInstToMachineMap_DdsSI_ProvidedPort</SHORT-NAME>
                     <COMMUNICATION-CONNECTOR-REF DEST="COMMUNICATION-CONNECTOR">/aeb_MachineDesign/MachineDesign/CommunicationConnector</COMMUNICATION-CONNECTOR-REF>
                     <SERVICE-INSTANCE-REFS>
                         <SERVICE-INSTANCE-REF DEST="DDS-PROVIDED-SERVICE-INSTANCE">/aeb_ServiceInstances/DdsSI_ProvidedPort</SERVICE-INSTANCE-REF>
                     </SERVICE-INSTANCE-REFS>
                 </DDS-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
-                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="3d8ddd2b-bab6-5e3a-b3df-8715124ea9a7">
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="a9573c56-474c-5ade-a9fc-f1cec3b94fd2">
                     <SHORT-NAME>SomeIpServiceInstToMachineMap_SomeipSI_ProvidedPort</SHORT-NAME>
                     <COMMUNICATION-CONNECTOR-REF DEST="COMMUNICATION-CONNECTOR">/aeb_MachineDesign/MachineDesign/CommunicationConnector</COMMUNICATION-CONNECTOR-REF>
                     <SERVICE-INSTANCE-REFS>
                         <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/aeb_ServiceInstances/SomeipSI_ProvidedPort</SERVICE-INSTANCE-REF>
                     </SERVICE-INSTANCE-REFS>
                 </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
-                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="ff487c4b-f57d-5a72-ab08-972a00e5e25c">
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="19ab3d0f-9473-5731-9167-8cc7c3ca32f0">
                     <SHORT-NAME>SomeIpServiceInstToMachineMap_SomeipSI_ProvidedPort_SomeipSI_ProvidedPort</SHORT-NAME>
                     <COMMUNICATION-CONNECTOR-REF DEST="COMMUNICATION-CONNECTOR">/aeb_MachineDesign/MachineDesign/CommunicationConnector</COMMUNICATION-CONNECTOR-REF>
                     <SERVICE-INSTANCE-REFS>
@@ -120,7 +134,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_ServiceInstanceToPortMappings</SHORT-NAME>
             <ELEMENTS>
-                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="45b4bfa8-ed22-5689-ae26-5a7037067bd5">
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="df5d17ce-034b-54bd-11e0-3c96e1188e72">
                     <SHORT-NAME>Mapping_ProvidedPort</SHORT-NAME>
                     <PORT-PROTOTYPE-IREF>
                         <CONTEXT-COMPONENT-PROTOTYPE-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/aeb</CONTEXT-COMPONENT-PROTOTYPE-REF>
@@ -134,7 +148,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_ServiceInstances</SHORT-NAME>
             <ELEMENTS>
-                <DDS-PROVIDED-SERVICE-INSTANCE UUID="1364283e-6eb6-5fd2-89a0-eb2c8f2f8d51">
+                <DDS-PROVIDED-SERVICE-INSTANCE UUID="6c57f247-61ab-532f-f4f6-77d9de002cff">
                     <SHORT-NAME>DdsSI_ProvidedPort</SHORT-NAME>
                     <SERVICE-INTERFACE-DEPLOYMENT-REF DEST="DDS-SERVICE-INTERFACE-DEPLOYMENT">/aeb_Deployments/DdsDeployment_ProvidedPort</SERVICE-INTERFACE-DEPLOYMENT-REF>
                     <DOMAIN-ID>0</DOMAIN-ID>
@@ -143,14 +157,18 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                             <QOS-PROFILE>RELIABLE</QOS-PROFILE>
                             <EVENT-REF DEST="DDS-EVENT-DEPLOYMENT">/aeb_Deployments/DdsDeployment_ProvidedPort/Deployment_Brake</EVENT-REF>
                         </DDS-EVENT-QOS-PROPS>
+                        <DDS-EVENT-QOS-PROPS>
+                            <QOS-PROFILE>RELIABLE</QOS-PROFILE>
+                            <EVENT-REF DEST="DDS-EVENT-DEPLOYMENT">/aeb_Deployments/DdsDeployment_ProvidedPort/Deployment_Steering</EVENT-REF>
+                        </DDS-EVENT-QOS-PROPS>
                     </EVENT-QOS-PROPSS>
                     <SERVICE-INSTANCE-ID>1</SERVICE-INSTANCE-ID>
                 </DDS-PROVIDED-SERVICE-INSTANCE>
-                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="a2c00bb3-5517-51ae-4ba4-c600ad23c065">
+                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="d0f9b79d-2741-5656-2d18-6318c171a429">
                     <SHORT-NAME>SomeipSI_ProvidedPort</SHORT-NAME>
                     <SERVICE-INTERFACE-DEPLOYMENT-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/aeb_Deployments/SomeipDeployment_ProvidedPort</SERVICE-INTERFACE-DEPLOYMENT-REF>
                     <PROVIDED-EVENT-GROUPS>
-                        <SOMEIP-PROVIDED-EVENT-GROUP UUID="7905e195-3e37-523b-7b76-d5ef8efa1488">
+                        <SOMEIP-PROVIDED-EVENT-GROUP UUID="d3e590c0-4365-5b7a-20b6-d2fd907e8e7d">
                             <SHORT-NAME>ProvidedEventGroup_ProvidedPort</SHORT-NAME>
                             <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/aeb_Deployments/SomeipDeployment_ProvidedPort/EventGroup_ProvidedPort</EVENT-GROUP-REF>
                         </SOMEIP-PROVIDED-EVENT-GROUP>

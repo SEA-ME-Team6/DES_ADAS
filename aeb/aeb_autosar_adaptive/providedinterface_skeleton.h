@@ -5,7 +5,7 @@
 
    Code generated for Simulink Adaptive model: "aeb"
    AUTOSAR AP Release: "22-11"
-   On: "Wed Jun 05 21:26:42 2024"  */
+   On: "Thu Jun 06 12:33:00 2024"  */
 
 #ifndef PROVIDEDINTERFACE_SKELETON_H_
 #define PROVIDEDINTERFACE_SKELETON_H_
@@ -18,11 +18,13 @@
 #include "ara/com/service_handle_type.h"
 // #include "providedinterface_common.h"
 
+
 namespace skeleton
 {
   namespace events
   {
     using Brake = ara::com::SkeletonEvent<double>;
+    using Steering = ara::com::SkeletonEvent<double>;
   }                                    /* namespace events */
 
   namespace methods
@@ -70,18 +72,23 @@ namespace skeleton
       uint16_t mEventId, mEventGroupId;
       uint16_t mMethodId;
       mEventId = 8645;
-      mEventGroupId = 8645;
+      mEventGroupId = 18054;
       Brake.Init(mHndl, mEventId, mEventGroupId);
+      mEventId = 12225;
+      mEventGroupId = 18054;
+      Steering.Init(mHndl, mEventId,mEventGroupId);
       return ara::core::Result<void>::FromValue();
     }
 
     inline void StopOfferService()
     {
       Brake.Deinit();
+      Steering.Deinit();
       // ara::com::ServiceFactory::DestroyService(mHndl);
     }
 
     skeleton::events::Brake Brake;
+    skeleton::events::Steering Steering;
    private:
     ara::com::ServiceHandleType mHndl;
     ara::com::MethodCallProcessingMode mMethodProcMode;

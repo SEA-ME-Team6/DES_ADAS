@@ -7,9 +7,9 @@
 //
 //  Code generation for model "aeb".
 //
-//  Model version              : 1.1
+//  Model version              : 1.3
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 21:26:40 2024
+//  C++ source code generated on : Thu Jun  6 12:32:57 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)
@@ -38,13 +38,19 @@ class aeb final
  public:
   // Block signals (default storage)
   struct B_aeb_T {
+    double OutportBufferForsteering;   // '<S1>/steer'
     double brake_command;              // '<S1>/MATLAB Function'
   };
 
   // Block states (default storage) for system '<Root>'
   struct DW_aeb_T {
     sensors_raspberrypi_UltrasonicBlock_aeb_T obj;// '<S1>/Ultrasonic Sensor'
-    codertarget_raspi_internal_RaspiTCPReceive_aeb_T obj_i;// '<Root>/TCP//IP Receive' 
+    codertarget_raspi_internal_RaspiTCPReceive_aeb_T obj_j;// '<Root>/TCP//IP Receive' 
+  };
+
+  // Invariant block signals (default storage)
+  struct ConstB_aeb_T {
+    double steer;                      // '<S1>/steer'
   };
 
   // Copy Constructor
@@ -87,6 +93,8 @@ class aeb final
   void aeb_SystemCore_setup(codertarget_raspi_internal_RaspiTCPReceive_aeb_T
     *obj);
 };
+
+extern const aeb::ConstB_aeb_T aeb_ConstB;// constant block i/o
 
 //-
 //  These blocks were eliminated from the model due to optimizations:

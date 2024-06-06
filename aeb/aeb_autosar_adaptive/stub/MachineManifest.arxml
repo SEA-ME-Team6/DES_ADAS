@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model aeb
-Model version                : 1.1
+Model version                : 1.3
 Simulink Coder version       : Simulink Coder 24.1 (R2024a) 19-Nov-2023
-XML source code generated on : Wed Jun 05 21:26:43 2024
-Model Checksum               : 3293457827 586643118 4887395 2912893866
+XML source code generated on : Thu Jun 06 12:33:01 2024
+Model Checksum               : 383559113 515998471 1606582208 2063248873
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
     <AR-PACKAGES>
@@ -15,31 +15,31 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                     <SHORT-NAME>MachineFG</SHORT-NAME>
                     <INITIAL-MODE-REF DEST="MODE-DECLARATION">/MachineStates/MachineFG/Running</INITIAL-MODE-REF>
                     <MODE-DECLARATIONS>
-                        <MODE-DECLARATION UUID="efe3223a-bd21-5ac5-9823-e0dd55c3440d">
+                        <MODE-DECLARATION UUID="4020a5cd-e238-5834-613c-c9de4bb700c4">
                             <SHORT-NAME>Off</SHORT-NAME>
                             <VALUE>1</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="440b63be-7f21-5360-ea63-ca2bc0278568">
+                        <MODE-DECLARATION UUID="4b938f62-fbd1-53d4-9d5c-d8ec331fea14">
                             <SHORT-NAME>Startup</SHORT-NAME>
                             <VALUE>2</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="989c6253-5c61-5786-5af5-bd914d52d32c">
+                        <MODE-DECLARATION UUID="6de5edb7-7093-5b58-4bac-ea4018c10031">
                             <SHORT-NAME>Running</SHORT-NAME>
                             <VALUE>3</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="fea1a11b-4093-5fed-98e3-b424320bf241">
+                        <MODE-DECLARATION UUID="002a0176-ea0d-5c13-50f5-b1d4b81d8ac5">
                             <SHORT-NAME>Idle</SHORT-NAME>
                             <VALUE>4</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="f65fb79e-f6aa-5585-2dea-cd9a0fc9b3a5">
+                        <MODE-DECLARATION UUID="6256210b-8fba-53c3-70b0-0f5ed21e07a0">
                             <SHORT-NAME>Shutdown</SHORT-NAME>
                             <VALUE>5</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="7b481941-bf08-5c0c-2676-df2bfd79bf7d">
+                        <MODE-DECLARATION UUID="bf5444e6-8c88-5e43-3836-317f4c880f8e">
                             <SHORT-NAME>Restart</SHORT-NAME>
                             <VALUE>6</VALUE>
                         </MODE-DECLARATION>
-                        <MODE-DECLARATION UUID="cd108a51-89d0-580e-7957-86ab01989831">
+                        <MODE-DECLARATION UUID="00e63e8b-ae68-59b5-35e1-eda04588c4e3">
                             <SHORT-NAME>Verify</SHORT-NAME>
                             <VALUE>7</VALUE>
                         </MODE-DECLARATION>
@@ -50,7 +50,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>Machines</SHORT-NAME>
             <ELEMENTS>
-                <MACHINE UUID="c0840127-c609-5726-39a6-4b96ac8953a5">
+                <MACHINE UUID="a1ab52c8-6d00-59b3-4729-d996a6d5f4cb">
                     <SHORT-NAME>Host</SHORT-NAME>
                     <DEFAULT-APPLICATION-TIMEOUT>
                         <ENTER-TIMEOUT-VALUE>60</ENTER-TIMEOUT-VALUE>
@@ -58,17 +58,17 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
                     </DEFAULT-APPLICATION-TIMEOUT>
                     <MACHINE-DESIGN-REF DEST="MACHINE-DESIGN">/aeb_MachineDesign/MachineDesign</MACHINE-DESIGN-REF>
                     <MODULE-INSTANTIATIONS>
-                        <OS-MODULE-INSTANTIATION UUID="88632565-358c-51d6-20ac-a86240074f7f">
+                        <OS-MODULE-INSTANTIATION UUID="b72ab5b2-e235-5173-cafa-174b6f912a0d">
                             <SHORT-NAME>HostOsInstantiation</SHORT-NAME>
                             <RESOURCE-GROUPS>
-                                <RESOURCE-GROUP UUID="02383d65-3472-5c96-6064-02406484b021">
+                                <RESOURCE-GROUP UUID="8179f09f-a494-5a6a-1fc8-af91aa0ead10">
                                     <SHORT-NAME>DefaultResourceGroup</SHORT-NAME>
                                     <CPU-USAGE>100</CPU-USAGE>
                                     <MEM-USAGE>4096000000</MEM-USAGE>
                                 </RESOURCE-GROUP>
                             </RESOURCE-GROUPS>
                         </OS-MODULE-INSTANTIATION>
-                        <LOG-AND-TRACE-INSTANTIATION UUID="d27792db-06f1-5c21-3601-28964609db35">
+                        <LOG-AND-TRACE-INSTANTIATION UUID="855020bb-4468-5923-4fa2-a7987eeb6ecb">
                             <SHORT-NAME>aeb_LogAndTraceInstantiation</SHORT-NAME>
                             <DLT-ECU-REF DEST="DLT-ECU">/aeb_DltEcu/DefaultDltEcu</DLT-ECU-REF>
                             <LOG-SINK-REFS>
@@ -82,7 +82,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_DltApplicationToProcessMapping</SHORT-NAME>
             <ELEMENTS>
-                <DLT-APPLICATION-TO-PROCESS-MAPPING UUID="44601cd6-7bae-56ca-67e2-d131212fb401">
+                <DLT-APPLICATION-TO-PROCESS-MAPPING UUID="5de6802f-f8d7-5b99-52a6-d4b9d97a1053">
                     <SHORT-NAME>DltApplicationToProcessMapping</SHORT-NAME>
                     <DLT-APPLICATION-REF DEST="DLT-APPLICATION">/aeb_DltEcu/DefaultDltEcu/DefaultDltApplication</DLT-APPLICATION-REF>
                     <PROCESS-REF DEST="PROCESS">/aeb_Processes/DefaultInstance</PROCESS-REF>
@@ -92,13 +92,13 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_DltEcu</SHORT-NAME>
             <ELEMENTS>
-                <DLT-ECU UUID="30e54d6a-6174-55d3-139f-c4e59e61f786">
+                <DLT-ECU UUID="f354707f-6a85-57e3-0a84-2b652eee94ab">
                     <SHORT-NAME>DefaultDltEcu</SHORT-NAME>
                     <APPLICATIONS>
-                        <DLT-APPLICATION UUID="58afe9c2-0fe3-5873-e0ea-b2051492d9f8">
+                        <DLT-APPLICATION UUID="973fdfce-1ca8-5fca-271d-a4a6021c3667">
                             <SHORT-NAME>DefaultDltApplication</SHORT-NAME>
                             <APPLICATION-DESCRIPTION>Log messages for adaptive application aeb</APPLICATION-DESCRIPTION>
-                            <APPLICATION-ID>1874</APPLICATION-ID>
+                            <APPLICATION-ID>1446</APPLICATION-ID>
                         </DLT-APPLICATION>
                     </APPLICATIONS>
                 </DLT-ECU>
@@ -107,7 +107,7 @@ Model Checksum               : 3293457827 586643118 4887395 2912893866
         <AR-PACKAGE>
             <SHORT-NAME>aeb_DltLogSink</SHORT-NAME>
             <ELEMENTS>
-                <DLT-LOG-SINK UUID="3e680c35-f73a-537b-ccb0-6731a2ec9f14">
+                <DLT-LOG-SINK UUID="c2792196-f1b8-53b2-cfb4-f4e1c825dc7a">
                     <SHORT-NAME>DefaultDltLogSink</SHORT-NAME>
                     <CATEGORY>DLT_LOGSINK_CONSOLE</CATEGORY>
                     <DEFAULT-LOG-THRESHOLD>WARN</DEFAULT-LOG-THRESHOLD>

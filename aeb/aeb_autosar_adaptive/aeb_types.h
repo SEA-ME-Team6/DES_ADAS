@@ -7,9 +7,9 @@
 //
 //  Code generation for model "aeb".
 //
-//  Model version              : 1.1
+//  Model version              : 1.3
 //  Simulink Coder version : 24.1 (R2024a) 19-Nov-2023
-//  C++ source code generated on : Wed Jun  5 21:26:40 2024
+//  C++ source code generated on : Thu Jun  6 12:32:57 2024
 //
 //  Target selection: autosar_adaptive.tlc
 //  Embedded hardware selection: ARM Compatible->ARM Cortex-A (64-bit)

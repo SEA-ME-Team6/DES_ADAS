@@ -1,1 +1,2 @@
-Simulink block aeb/brake using SOME/IP EventId '8645' and EventGroupId '8645' for ara::com event communication.
+Simulink block aeb/brake using SOME/IP EventId '8645' and EventGroupId '18054' for ara::com event communication.
+Simulink block aeb/steering using SOME/IP EventId '12225' and EventGroupId '18054' for ara::com event communication.

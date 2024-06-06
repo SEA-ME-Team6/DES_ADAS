@@ -1,5 +1,5 @@
 //
-//  aeb_private.h
+//  aeb_data.cpp
 //
 //  Academic License - for use in teaching, academic research, and meeting
 //  course requirements at degree granting institutions only.  Not for
@@ -17,10 +17,10 @@
 //  Validation result: Not run
 
 
-#ifndef aeb_private_h_
-#define aeb_private_h_
-#include <stdbool.h>
-#include <stdint.h>
-#include "complex_types.h"
-#include "aeb_types.h"
-#endif                                 // aeb_private_h_
+#include "aeb.h"
+
+// Invariant block signals (default storage)
+const aeb::ConstB_aeb_T aeb_ConstB{
+  0.0
+  // '<S1>/steer'
+};
