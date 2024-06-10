@@ -69,7 +69,7 @@ endif()
 ###########################################################################
 find_package(Threads REQUIRED)
 find_package(Boost 1.55 COMPONENTS system thread log REQUIRED)
-find_package(vsomeip3 REQUIRED)
+find_package(vsomeip3 REQUIRED PATHS /home/dahyun/vsomeip_aarch64/vsomeip/build NO_DEFAULT_PATH)
 
 ###########################################################################
 ## System Libraries
@@ -140,6 +140,8 @@ target_compile_definitions(aeb PRIVATE -DMAX_CONN_RASPI
 target_compile_options(aeb PRIVATE -std=c++11
     $<$<NOT:$<BOOL:${CMAKE_BUILD_TYPE}>>:-O3 -DNDEBUG>)
 
+# include_directories("/home/dahyun/vsomeip_aarch64/vsomeip/interface")
+
 # Specify include directories for target "aeb".
 target_include_directories(aeb PRIVATE ${START_DIR}
     /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/raspi/include
@@ -160,7 +162,8 @@ target_include_directories(aeb PRIVATE ${START_DIR}
     ${CMAKE_SOURCE_DIR}/ara/core
     # ${CMAKE_SOURCE_DIR}/ara/diag
     # ${CMAKE_SOURCE_DIR}/ara/exec
-    ${CMAKE_SOURCE_DIR}/ara/log)
+    ${CMAKE_SOURCE_DIR}/ara/log
+    )
 
 # Specify library link dependencies for target "aeb". CMake generator 
 # expressions are used to create a CMakeLists.txt file that supports 
@@ -171,7 +174,8 @@ target_link_libraries(aeb PRIVATE Threads::Threads
     $<$<BOOL:${WIN32}>:ws2_32>
     $<$<BOOL:${WIN32}>:mswsock>
     $<$<BOOL:${WIN32}>:advapi32>
-    vsomeip3)
+    vsomeip3
+    )
 
 # Extract DWARF debug symbols into a separate file when building 
 # executable programs for Apple platforms.

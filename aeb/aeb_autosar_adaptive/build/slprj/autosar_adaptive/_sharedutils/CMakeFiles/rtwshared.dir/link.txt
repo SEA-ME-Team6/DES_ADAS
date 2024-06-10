@@ -1,2 +1,2 @@
-/usr/bin/ar qc rtwshared.a CMakeFiles/rtwshared.dir/QRCompQy_double.cpp.o CMakeFiles/rtwshared.dir/QRDC_double.cpp.o CMakeFiles/rtwshared.dir/QRE_double.cpp.o CMakeFiles/rtwshared.dir/QRSL1_double.cpp.o CMakeFiles/rtwshared.dir/QRV2Norm_double.cpp.o CMakeFiles/rtwshared.dir/makeConstraintMatrix_Projective_D_D.cpp.o CMakeFiles/rtwshared.dir/normPts_D_D.cpp.o
-/usr/bin/ranlib rtwshared.a
+/usr/bin/aarch64-linux-gnu-ar qc rtwshared.a CMakeFiles/rtwshared.dir/QRCompQy_double.cpp.o CMakeFiles/rtwshared.dir/QRDC_double.cpp.o CMakeFiles/rtwshared.dir/QRE_double.cpp.o CMakeFiles/rtwshared.dir/QRSL1_double.cpp.o CMakeFiles/rtwshared.dir/QRV2Norm_double.cpp.o CMakeFiles/rtwshared.dir/makeConstraintMatrix_Projective_D_D.cpp.o CMakeFiles/rtwshared.dir/normPts_D_D.cpp.o
+/usr/bin/aarch64-linux-gnu-ranlib rtwshared.a

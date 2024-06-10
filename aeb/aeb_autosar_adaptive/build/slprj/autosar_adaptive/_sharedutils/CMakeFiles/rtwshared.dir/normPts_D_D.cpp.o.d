@@ -1,64 +1,70 @@
 slprj/autosar_adaptive/_sharedutils/CMakeFiles/rtwshared.dir/normPts_D_D.cpp.o: \
  /home/dahyun/DES_ADAS/aeb/slprj/autosar_adaptive/_sharedutils/normPts_D_D.cpp \
- /usr/include/stdc-predef.h \
- /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
- /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /usr/include/x86_64-linux-gnu/bits/long-double.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/timesize.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/aarch64-linux-gnu/include/stdc-predef.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdint.h \
+ /usr/aarch64-linux-gnu/include/stdint.h \
+ /usr/aarch64-linux-gnu/include/bits/libc-header-start.h \
+ /usr/aarch64-linux-gnu/include/features.h \
+ /usr/aarch64-linux-gnu/include/sys/cdefs.h \
+ /usr/aarch64-linux-gnu/include/bits/wordsize.h \
+ /usr/aarch64-linux-gnu/include/bits/long-double.h \
+ /usr/aarch64-linux-gnu/include/gnu/stubs.h \
+ /usr/aarch64-linux-gnu/include/gnu/stubs-lp64.h \
+ /usr/aarch64-linux-gnu/include/bits/types.h \
+ /usr/aarch64-linux-gnu/include/bits/timesize.h \
+ /usr/aarch64-linux-gnu/include/bits/typesizes.h \
+ /usr/aarch64-linux-gnu/include/bits/time64.h \
+ /usr/aarch64-linux-gnu/include/bits/wchar.h \
+ /usr/aarch64-linux-gnu/include/bits/stdint-intn.h \
+ /usr/aarch64-linux-gnu/include/bits/stdint-uintn.h \
  /home/dahyun/DES_ADAS/aeb/slprj/autosar_adaptive/_sharedutils/normPts_D_D.h \
- /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stdbool.h \
  /home/dahyun/DES_ADAS/aeb/slprj/autosar_adaptive/_sharedutils/complex_types.h \
- /usr/include/c++/9/cmath \
- /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
- /usr/include/c++/9/bits/cpp_type_traits.h \
- /usr/include/c++/9/ext/type_traits.h /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/9/bits/std_abs.h /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/aarch64-linux-gnu/include/c++/9/cmath \
+ /usr/aarch64-linux-gnu/include/c++/9/aarch64-linux-gnu/bits/c++config.h \
+ /usr/aarch64-linux-gnu/include/c++/9/aarch64-linux-gnu/bits/os_defines.h \
+ /usr/aarch64-linux-gnu/include/c++/9/aarch64-linux-gnu/bits/cpu_defines.h \
+ /usr/aarch64-linux-gnu/include/c++/9/bits/cpp_type_traits.h \
+ /usr/aarch64-linux-gnu/include/c++/9/ext/type_traits.h \
+ /usr/aarch64-linux-gnu/include/math.h \
+ /usr/aarch64-linux-gnu/include/bits/math-vector.h \
+ /usr/aarch64-linux-gnu/include/bits/libm-simd-decl-stubs.h \
+ /usr/aarch64-linux-gnu/include/bits/floatn.h \
+ /usr/aarch64-linux-gnu/include/bits/floatn-common.h \
+ /usr/aarch64-linux-gnu/include/bits/flt-eval-method.h \
+ /usr/aarch64-linux-gnu/include/bits/fp-logb.h \
+ /usr/aarch64-linux-gnu/include/bits/fp-fast.h \
+ /usr/aarch64-linux-gnu/include/bits/mathcalls-helper-functions.h \
+ /usr/aarch64-linux-gnu/include/bits/mathcalls.h \
+ /usr/aarch64-linux-gnu/include/bits/mathcalls-narrow.h \
+ /usr/aarch64-linux-gnu/include/bits/iscanonical.h \
+ /usr/aarch64-linux-gnu/include/c++/9/bits/std_abs.h \
+ /usr/aarch64-linux-gnu/include/stdlib.h \
+ /usr/lib/gcc-cross/aarch64-linux-gnu/9/include/stddef.h \
+ /usr/aarch64-linux-gnu/include/bits/waitflags.h \
+ /usr/aarch64-linux-gnu/include/bits/waitstatus.h \
+ /usr/aarch64-linux-gnu/include/bits/types/locale_t.h \
+ /usr/aarch64-linux-gnu/include/bits/types/__locale_t.h \
+ /usr/aarch64-linux-gnu/include/sys/types.h \
+ /usr/aarch64-linux-gnu/include/bits/types/clock_t.h \
+ /usr/aarch64-linux-gnu/include/bits/types/clockid_t.h \
+ /usr/aarch64-linux-gnu/include/bits/types/time_t.h \
+ /usr/aarch64-linux-gnu/include/bits/types/timer_t.h \
+ /usr/aarch64-linux-gnu/include/endian.h \
+ /usr/aarch64-linux-gnu/include/bits/endian.h \
+ /usr/aarch64-linux-gnu/include/bits/endianness.h \
+ /usr/aarch64-linux-gnu/include/bits/byteswap.h \
+ /usr/aarch64-linux-gnu/include/bits/uintn-identity.h \
+ /usr/aarch64-linux-gnu/include/sys/select.h \
+ /usr/aarch64-linux-gnu/include/bits/select.h \
+ /usr/aarch64-linux-gnu/include/bits/types/sigset_t.h \
+ /usr/aarch64-linux-gnu/include/bits/types/__sigset_t.h \
+ /usr/aarch64-linux-gnu/include/bits/types/struct_timeval.h \
+ /usr/aarch64-linux-gnu/include/bits/types/struct_timespec.h \
+ /usr/aarch64-linux-gnu/include/bits/pthreadtypes.h \
+ /usr/aarch64-linux-gnu/include/bits/thread-shared-types.h \
+ /usr/aarch64-linux-gnu/include/bits/pthreadtypes-arch.h \
+ /usr/aarch64-linux-gnu/include/bits/struct_mutex.h \
+ /usr/aarch64-linux-gnu/include/bits/struct_rwlock.h \
+ /usr/aarch64-linux-gnu/include/alloca.h \
+ /usr/aarch64-linux-gnu/include/bits/stdlib-float.h

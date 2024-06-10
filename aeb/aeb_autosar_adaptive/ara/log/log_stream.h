@@ -49,7 +49,7 @@ namespace ara
             /// @brief LogLeve insertion operator
             /// @param value A size_t
             /// @returns Reference to the current log stream
-            LogStream &operator<<(size_t value);
+            // LogStream &operator<<(size_t value);
 
             /// @brief Byte insertion operator
             /// @param value A byte value
