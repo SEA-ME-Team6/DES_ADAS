@@ -451,7 +451,7 @@ void Executor::schedulePeriodicEvents(LoggerT *logger, int tickLimit, CallableT&
                 else {
                     // Prior executions are not finished yet while the event gets triggered again
                     if(logger != nullptr) {
-                        logger->LogVerbose() << "INFO: Overrun detected: Periodic event " << i << " triggers too fast\n";
+                        // logger->LogVerbose() << "INFO: Overrun detected: Periodic event " << i << " triggers too fast\n";
                     }
                 }
             }

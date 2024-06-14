@@ -69,7 +69,9 @@ endif()
 ###########################################################################
 find_package(Threads REQUIRED)
 find_package(Boost 1.55 COMPONENTS system thread log REQUIRED)
-find_package(vsomeip3 REQUIRED)
+# find_package(vsomeip3 REQUIRED)
+find_package(vsomeip3 REQUIRED PATHS /home/dahyun/vsomeip_aarch64/vsomeip/build NO_DEFAULT_PATH)
+
 
 ###########################################################################
 ## System Libraries

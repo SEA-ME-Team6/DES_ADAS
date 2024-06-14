@@ -1,8 +1,9 @@
 import socket
+import time
 
 def main():
     host = '192.168.86.39'  # IP address of local
-    port = 3332            # Port num which has to be same as LKAS port num
+    port = 3333             # Port num which has to be same as LKAS port num
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -17,19 +18,13 @@ def main():
         client_soc, addr = server_socket.accept()
         print('Connected client addr:', addr)
 
+        integer_value = 1
+        data = integer_value.to_bytes(4, byteorder='big', signed=True)
+
         while True:
-            user_input = input("Enter an integer to send to the client (or 'exit' to quit): ")
-            
-            if user_input.lower() == 'exit':
-                break
-            
-            try:
-                integer_value = int(user_input)
-                data = integer_value.to_bytes(4, byteorder='big', signed=True)
-                client_soc.sendall(data)
-                print(f"Sent {integer_value} to the client.")
-            except ValueError:
-                print("Invalid input. Please enter a valid integer.")
+            client_soc.sendall(data)
+            print(f"Sent {integer_value} to the client.")
+            time.sleep(1)  # Adjust the sleep time as needed
     
     except KeyboardInterrupt:
         print('KeyboardInterrupt received. Server closing...')

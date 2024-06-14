@@ -73,253 +73,253 @@ CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o: /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o -MF CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o.d -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o -c /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o -MF CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o.d -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.o -c /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c > CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c > CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.i
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_v4l2_cam.c.s
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o: /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o -MF CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o.d -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o -c /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o -MF CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o.d -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.o -c /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c > CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c > CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.i
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/realtime/targets/linux/src/MW_availableWebcam.c.s
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o: /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o -MF CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o.d -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o -c /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o -MF CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o.d -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.o -c /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c > CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c > CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.i
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_d_rt.c.s
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o: /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o -MF CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o.d -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o -c /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o -MF CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o.d -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.o -c /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c > CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c > CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.i
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipsvd/svd_helper_rt.c.s
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o: /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o -MF CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o.d -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o -c /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o -MF CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o.d -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.o -c /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c > CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c > CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.i
 
 CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c -o CMakeFiles/lkas.dir/usr/local/MATLAB/R2024a/toolbox/vision/visionrt/vipendian/is_little_endian_rt.c.s
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o: /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o -MF CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o.d -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o -c /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o -MF CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o.d -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.o -c /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c > CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c > CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.i
 
 CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c -o CMakeFiles/lkas.dir/home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c.s
 
 CMakeFiles/lkas.dir/lkas.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/lkas.cpp.o: ../lkas.cpp
 CMakeFiles/lkas.dir/lkas.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lkas.dir/lkas.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/lkas.cpp.o -MF CMakeFiles/lkas.dir/lkas.cpp.o.d -o CMakeFiles/lkas.dir/lkas.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/lkas.cpp.o -MF CMakeFiles/lkas.dir/lkas.cpp.o.d -o CMakeFiles/lkas.dir/lkas.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp
 
 CMakeFiles/lkas.dir/lkas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/lkas.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp > CMakeFiles/lkas.dir/lkas.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp > CMakeFiles/lkas.dir/lkas.cpp.i
 
 CMakeFiles/lkas.dir/lkas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/lkas.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp -o CMakeFiles/lkas.dir/lkas.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas.cpp -o CMakeFiles/lkas.dir/lkas.cpp.s
 
 CMakeFiles/lkas.dir/lkas_data.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/lkas_data.cpp.o: ../lkas_data.cpp
 CMakeFiles/lkas.dir/lkas_data.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lkas.dir/lkas_data.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/lkas_data.cpp.o -MF CMakeFiles/lkas.dir/lkas_data.cpp.o.d -o CMakeFiles/lkas.dir/lkas_data.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/lkas_data.cpp.o -MF CMakeFiles/lkas.dir/lkas_data.cpp.o.d -o CMakeFiles/lkas.dir/lkas_data.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp
 
 CMakeFiles/lkas.dir/lkas_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/lkas_data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp > CMakeFiles/lkas.dir/lkas_data.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp > CMakeFiles/lkas.dir/lkas_data.cpp.i
 
 CMakeFiles/lkas.dir/lkas_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/lkas_data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp -o CMakeFiles/lkas.dir/lkas_data.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/lkas_data.cpp -o CMakeFiles/lkas.dir/lkas_data.cpp.s
 
 CMakeFiles/lkas.dir/main.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/main.cpp.o: ../main.cpp
 CMakeFiles/lkas.dir/main.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lkas.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/main.cpp.o -MF CMakeFiles/lkas.dir/main.cpp.o.d -o CMakeFiles/lkas.dir/main.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/main.cpp.o -MF CMakeFiles/lkas.dir/main.cpp.o.d -o CMakeFiles/lkas.dir/main.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp
 
 CMakeFiles/lkas.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp > CMakeFiles/lkas.dir/main.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp > CMakeFiles/lkas.dir/main.cpp.i
 
 CMakeFiles/lkas.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp -o CMakeFiles/lkas.dir/main.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/main.cpp -o CMakeFiles/lkas.dir/main.cpp.s
 
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o: ../ara/com/instance_identifier.cpp
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o -MF CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o -MF CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp
 
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp > CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp > CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.i
 
 CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp -o CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/instance_identifier.cpp -o CMakeFiles/lkas.dir/ara/com/instance_identifier.cpp.s
 
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o: ../ara/com/resolve_instance.cpp
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o -MF CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o -MF CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp
 
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp > CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp > CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.i
 
 CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp -o CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/resolve_instance.cpp -o CMakeFiles/lkas.dir/ara/com/resolve_instance.cpp.s
 
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o: ../ara/com/service_factory.cpp
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o -MF CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o -MF CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/service_factory.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp
 
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/com/service_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp > CMakeFiles/lkas.dir/ara/com/service_factory.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp > CMakeFiles/lkas.dir/ara/com/service_factory.cpp.i
 
 CMakeFiles/lkas.dir/ara/com/service_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/com/service_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp -o CMakeFiles/lkas.dir/ara/com/service_factory.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/service_factory.cpp -o CMakeFiles/lkas.dir/ara/com/service_factory.cpp.s
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o: ../ara/com/vsomeip/vsomeip_client.cpp
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o -MF CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o -MF CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp > CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp > CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.i
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_client.cpp -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_client.cpp.s
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o: ../ara/com/vsomeip/vsomeip_server.cpp
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o -MF CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o -MF CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o.d -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp > CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp > CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.i
 
 CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/com/vsomeip/vsomeip_server.cpp -o CMakeFiles/lkas.dir/ara/com/vsomeip/vsomeip_server.cpp.s
 
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.o: ../ara/core/error_code.cpp
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lkas.dir/ara/core/error_code.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/core/error_code.cpp.o -MF CMakeFiles/lkas.dir/ara/core/error_code.cpp.o.d -o CMakeFiles/lkas.dir/ara/core/error_code.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/core/error_code.cpp.o -MF CMakeFiles/lkas.dir/ara/core/error_code.cpp.o.d -o CMakeFiles/lkas.dir/ara/core/error_code.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp
 
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/core/error_code.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp > CMakeFiles/lkas.dir/ara/core/error_code.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp > CMakeFiles/lkas.dir/ara/core/error_code.cpp.i
 
 CMakeFiles/lkas.dir/ara/core/error_code.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/core/error_code.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp -o CMakeFiles/lkas.dir/ara/core/error_code.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/error_code.cpp -o CMakeFiles/lkas.dir/ara/core/error_code.cpp.s
 
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o: ../ara/core/instance_specifier.cpp
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o -MF CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o.d -o CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o -MF CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o.d -o CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp
 
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp > CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp > CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.i
 
 CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp -o CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/core/instance_specifier.cpp -o CMakeFiles/lkas.dir/ara/core/instance_specifier.cpp.s
 
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o: ../ara/log/log_stream.cpp
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o -MF CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o.d -o CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o -MF CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o.d -o CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp
 
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/log/log_stream.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp > CMakeFiles/lkas.dir/ara/log/log_stream.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp > CMakeFiles/lkas.dir/ara/log/log_stream.cpp.i
 
 CMakeFiles/lkas.dir/ara/log/log_stream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/log/log_stream.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp -o CMakeFiles/lkas.dir/ara/log/log_stream.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/log_stream.cpp -o CMakeFiles/lkas.dir/ara/log/log_stream.cpp.s
 
 CMakeFiles/lkas.dir/ara/log/logger.cpp.o: CMakeFiles/lkas.dir/flags.make
 CMakeFiles/lkas.dir/ara/log/logger.cpp.o: ../ara/log/logger.cpp
 CMakeFiles/lkas.dir/ara/log/logger.cpp.o: CMakeFiles/lkas.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lkas.dir/ara/log/logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/log/logger.cpp.o -MF CMakeFiles/lkas.dir/ara/log/logger.cpp.o.d -o CMakeFiles/lkas.dir/ara/log/logger.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lkas.dir/ara/log/logger.cpp.o -MF CMakeFiles/lkas.dir/ara/log/logger.cpp.o.d -o CMakeFiles/lkas.dir/ara/log/logger.cpp.o -c /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp
 
 CMakeFiles/lkas.dir/ara/log/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lkas.dir/ara/log/logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp > CMakeFiles/lkas.dir/ara/log/logger.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp > CMakeFiles/lkas.dir/ara/log/logger.cpp.i
 
 CMakeFiles/lkas.dir/ara/log/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lkas.dir/ara/log/logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp -o CMakeFiles/lkas.dir/ara/log/logger.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/ara/log/logger.cpp -o CMakeFiles/lkas.dir/ara/log/logger.cpp.s
 
 # Object files for target lkas
 lkas_OBJECTS = \
@@ -365,7 +365,7 @@ lkas: CMakeFiles/lkas.dir/ara/log/log_stream.cpp.o
 lkas: CMakeFiles/lkas.dir/ara/log/logger.cpp.o
 lkas: CMakeFiles/lkas.dir/build.make
 lkas: slprj/autosar_adaptive/_sharedutils/rtwshared.a
-lkas: /usr/local/lib/libvsomeip3.so.3.1.20
+lkas: /home/dahyun/vsomeip_aarch64/vsomeip/build/libvsomeip3.so.3.1.20
 lkas: CMakeFiles/lkas.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dahyun/DES_ADAS/lkas/lkas_autosar_adaptive/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable lkas"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lkas.dir/link.txt --verbose=$(VERBOSE)

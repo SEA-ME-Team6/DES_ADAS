@@ -32,7 +32,7 @@ void aeb::aeb_SystemCore_setup(codertarget_raspi_internal_RaspiTCPReceive_aeb_T 
   uint16_t tmp_0;
   uint8_t isLittleEndian;
   static const std::array<char, 14> ipaddr_0{ { '1', '9', '2', '.', '1', '6',
-      '8', '.', '1', '.', '1', '5', '5', '\x00' } };
+      '8', '.', '8', '6', '.', '4', '5', '\x00' } };
 
   // Start for MATLABSystem: '<Root>/TCP//IP Receive'
   obj->isInitialized = 1;
@@ -54,7 +54,7 @@ void aeb::aeb_SystemCore_setup(codertarget_raspi_internal_RaspiTCPReceive_aeb_T 
   }
 
   // Start for MATLABSystem: '<Root>/TCP//IP Receive'
-  TCPStreamSetup(3333, 0, &obj->connStream_, tmp_0, 0.0, &errorNo, &ipaddr[0]);
+  TCPStreamSetup(3332, 0, &obj->connStream_, tmp_0, 0.0, &errorNo, &ipaddr[0]);
   littleEndianCheck(&isLittleEndian);
 }
 
@@ -86,6 +86,8 @@ void aeb::step()
   // Outputs for Enabled SubSystem: '<Root>/Enabled Subsystem' incorporates:
   //   EnablePort: '<S1>/Enable'
 
+  std::cout << "TCP send: " << (int)b_varargout_1 << std::endl;
+
   // Start for MATLABSystem: '<Root>/TCP//IP Receive'
   if (b_varargout_1 > 0) {
     // MATLABSystem: '<S1>/Ultrasonic Sensor'
@@ -109,10 +111,13 @@ void aeb::step()
   // Send: '<Root>/Event Send'
   // Send event
   ProvidedPort->Brake.Send(aeb_B.brake_command);
+  std::cout << "Brake: " << aeb_B.brake_command << std::endl;
 
   // Send: '<Root>/Event Send1'
   // Send event
   ProvidedPort->Steering.Send(aeb_B.OutportBufferForsteering);
+  std::cout << "Steering: " << aeb_B.OutportBufferForsteering << std::endl;
+
 }
 
 // Model initialize function
