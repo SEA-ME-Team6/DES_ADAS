@@ -70,7 +70,7 @@ endif()
 find_package(Threads REQUIRED)
 find_package(Boost 1.55 COMPONENTS system thread log REQUIRED)
 # find_package(vsomeip3 REQUIRED)
-# find_package(vsomeip3 REQUIRED PATHS /home/dahyun/vsomeip_aarch64/vsomeip/build NO_DEFAULT_PATH)
+# find_package(vsomeip3 REQUIRED PATHS /home/seame-workstation09/vsomeip_aarch64/vsomeip/build NO_DEFAULT_PATH)
 find_package(vsomeip3 REQUIRED)
 
 ###########################################################################
@@ -90,7 +90,7 @@ file(GLOB ARA_CORE_SOURCES "${CMAKE_SOURCE_DIR}/ara/core/*.cpp")
 file(GLOB ARA_LOG_SOURCES "${CMAKE_SOURCE_DIR}/ara/log/*.cpp")
 
 # Definition of target "control".
-add_executable(control  /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
+add_executable(control  /home/seame-workstation09/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/src/TCPSendReceive/MW_TCPSendReceive.c
     ${START_DIR}/control_autosar_adaptive/control.cpp
     ${START_DIR}/control_autosar_adaptive/main.cpp
     ${ARA_COM_SOURCES}
@@ -132,7 +132,7 @@ target_compile_options(control PRIVATE -std=c++11
 
 # Specify include directories for target "control".
 target_include_directories(control PRIVATE ${START_DIR}
-    /home/dahyun/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/include
+    /home/seame-workstation09/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/shared_linuxservices/include
     ${START_DIR}/control_autosar_adaptive
     ${MATLAB_ROOT}/toolbox/coder/simulinkcoder/src/executor
     ${START_DIR}/control_autosar_adaptive/stub/aragen
