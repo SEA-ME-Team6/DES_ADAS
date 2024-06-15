@@ -4,7 +4,7 @@ from piracer.vehicles import PiRacerStandard
 
 def main():
     host = '192.168.1.155'
-    port = 3333
+    port = 3334
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -25,17 +25,22 @@ def main():
 
         while True:
             data = client_soc.recv(8)
+            print('data!!')
             if not data:
                 break
-            double_data = struct.unpack('>d', data)[0]
-            #print('recv msg:', double_data)
+            aeb_sign = struct.unpack('>d', data)[0]
+            print('recv msg:', aeb_sign)
 
-            steering = double_data * 0.008
+            # steering = double_data * 0.005
 
-            print('steering: ', steering)
+            # print('steering: ', steering)
+            if aeb_sign == 1.0:
+                piracer.set_throttle_percent(0.0)
+            else:
+                piracer.set_throttle_percent(0.45)
 
-            piracer.set_throttle_percent(0.45)
-            piracer.set_steering_percent(steering)
+
+            # piracer.set_steering_percent(steering)
 
     except KeyboardInterrupt:
         print('KeyboardInterrupt received. Server closing...')
